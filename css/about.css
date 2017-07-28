@@ -1,0 +1,2155 @@
+body {
+    background-image: linear-gradient(180deg, #00CCFF 0%, #1F8BFF 15.7%, #2288FF 16.7%, #4149FF 32.4%, #4344FF 33.4%, #6104FF 49.1%, #6402FF 50.1%, #9500CD 65.8%, #9700CA 66.8%, #CA0096 82.5%, #CC0094 83.5%, #FF0061 100%);
+    transition: all .3s ease-in;
+    background-color: rgba(0, 0, 0, 1);
+    background-position: 0px 0%;
+    background-size: 100% 600%;
+    height: 100%;
+}
+/*new nav css*/
+
+.nav-background{
+  background-color: transparent;
+  padding-top: 20px;
+}
+.ekocom-logo-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+}
+.nav-container-background{
+  height: 250px;
+  /*background-color: black;*/
+  position: relative;
+  z-index: 10;
+  margin-bottom: -230px;
+  opacity: .98;
+  transition: all 0.82s;
+  transition-property: all;
+  transition-duration: 0.82s;
+  transition-timing-function: initial;
+  transition-delay: 0.12s;
+  -webkit-transition-delay: 0.12s;
+  -moz-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+  filter: blur(3px);
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding-right: 66px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: montserrat;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.transition {
+    transition: all 0.82s;
+    transition-property: all;
+    transition-duration: 0.82s;
+    transition-timing-function: initial;
+    transition-delay: 0.12s;
+    -webkit-transition-delay: 0.12s;
+    -moz-transition-delay: 0.12s;
+    -o-transition-delay: 0.12s;
+    transition-delay: 0.12s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 10;
+    font-size: 14px;
+    font-family: Montserrat;
+    opacity: .98;
+    transition: all 0.82s;
+    transition-property: all;
+    transition-duration: 0.82s;
+    transition-timing-function: initial;
+    transition-delay: 0.12s;
+    -webkit-transition-delay: 0.12s;
+    -moz-transition-delay: 0.12s;
+    -o-transition-delay: 0.12s;
+    transition-delay: 0.12s;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+    font-family: Montserrat;
+    transition: all 0.82s;
+    transition-property: all;
+    transition-duration: 0.82s;
+    transition-timing-function: initial;
+    transition-delay: 0.12s;
+    -webkit-transition-delay: 0.12s;
+    -moz-transition-delay: 0.12s;
+    -o-transition-delay: 0.12s;
+    transition-delay: 0.12s;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+.branded-title{
+  margin-top: -120px;
+}
+a:link{
+  text-decoration: none;
+}
+.cms-header-item {
+    padding: 1.4vh 12px;
+    font-size: 75%;
+    cursor: pointer;
+    z-index: 2;
+    margin-right: 60px;
+}
+
+#cms-header:before {
+    background: rgba(25, 25, 36, 0.31);
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    border-radius: 207.6px;
+    content: "";
+    position: absolute;
+    width: 12em;
+    height: 100%;
+    left: 0;
+    transition: left .5s;
+}
+
+.section-0#cms-header:before {
+    left: -1.5em;
+}
+
+.section-1#cms-header:before {
+    left: 10.4em;
+}
+
+.section-2#cms-header:before {
+    left: 23.5em;
+}
+
+#cms-header {
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: 14vh;
+    left: 6vw;
+    z-index: 1;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-description.column2 {
+    margin-left: 60%;
+    width: 46.1%;
+}
+
+#cms-nav-arrows {
+    position: absolute;
+    bottom: 13vh;
+    left: calc(9vw - 27px);
+    width: 3.75vw;
+}
+
+#cms-nav-arrow-prev {
+    margin-bottom: 7px;
+}
+
+#cms-nav-arrow-next,
+#cms-nav-arrow-prev {
+    width: 54px;
+    height: 53px;
+    border-radius: 53px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+#cms-nav-arrow-prev:hover,
+#cms-nav-arrow-next:hover {
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, .5);
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+#cms-nav-arrow-prev:hover svg #Rectangle,
+#cms-nav-arrow-next:hover svg #Rectangle {
+    fill: #FFF;
+}
+
+#cms-nav-arrow-prev.zeroOpacity,
+#cms-nav-arrow-next.zeroOpacity {
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+#cms-nav-arrow-next.active,
+#cms-nav-arrow-prev.active,
+#cms-nav-arrow-next:active,
+#cms-nav-arrow-prev:active {
+    box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, .5);
+    transform: scale3d(0.95, 0.95, 0.95);
+}
+
+#cms-nav-arrow {
+    width: 2vw;
+    height: 1.4vw;
+}
+
+
+/*.ekocom-slide-pagination.ekocom-rootslide {
+    padding-left: 7.4vw;
+}*/
+
+.ekocom-section .ekocom-section-conten {
+    padding: 23vh 4.7vw;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-description {
+    /*width: 45%;
+    margin-top: 1vmin;*/
+}
+
+.ekocom-section .ekocom-section-content .ekocom-description.column1 {
+    width: 55%;
+    margin-top: 1vmin;
+}
+
+
+.ekocom-section .ekocom-section-content .ekocom-title {
+    font-size: 5.4vmin;
+}
+
+.ekocom-section .ekocom-section-content {
+    padding: 10vh 0 13.5vh 0vw;
+}
+
+.ekocom-section-intro .ekocom-section-content .ekocom-intro-title {
+    width: 100%;
+}
+
+.header-user-plus {
+    display: inline-flex;
+    order: 2;
+    cursor: pointer;
+}
+
+.ekocom-slide-pagination:before {
+    margin: 3px 0 0 28px;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+}
+
+.ekocom-slide-pagination li {
+    line-height: 10px;
+    font-size: 7px;
+}
+
+.ekocom-header .ekocom-header-nav nav {
+    opacity: 1;
+}
+
+.ekocom-header .eko-btn-border.size-small {
+    opacity: 1;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-title {
+    font-size: 7.6vmin;
+    line-height: 8.9vmin;
+    margin-top: 4vmin;
+}
+
+/*@media (max-width:1405px) {
+    .ekocom-section .ekocom-section-content .ekocom-title {
+        font-size: 6.6vmin;
+        line-height: 7.9vmin;
+    }
+}
+
+@media (max-width:1405px) {
+    .ekocom-section .ekocom-section-content .ekocom-title {
+        font-size: 5.6vmin;
+        line-height: 6.9vmin;
+    }
+}*/
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle {
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 67.1vh;
+    top: 24.4vh;
+    width: 73vw;
+    left: 5.35vw;
+    margin: 0;
+    box-shadow: 0 20px 90px 0 rgba(43, 19, 8, 0.79);
+}
+
+.ekocom-site {
+    background-image: none;
+}
+
+.ekocom-section-pillars .pillars-container .pillar-container .pillar-img {
+    width: 100%;
+}
+
+.pillar-container .pillar-img {
+    width: 50%;
+    z-index: 0;
+    opacity: 0.9 !important;
+    background-color: rgba(200, 40, 200, .2);
+}
+
+.ekocom-pillars-description {}
+
+#ekocms-video-thumb {
+    background-image: url(../image/section1.png);
+    background-size: cover;
+    height: 44%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 29%;
+    transform: translate(0, -50%);
+    width: 84.9%;
+    left: 16%;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0 20px 90px 0 rgba(43, 19, 8, 0.79);
+}
+
+.ekocme-video-column-right,
+.ekocme-video-column-left {
+    width: 50%;
+    height: 100%;
+}
+
+.ekocme-video-column-left {
+    float: left;
+}
+
+.ekocme-video-column-right {
+    float: right;
+    position: relative;
+}
+
+.ekocom-section .ekocom-section-content .ekocms-video-title {
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    opacity: 1;
+    font-size: 8vmin;
+    line-height: 8vmin;
+    width: auto;
+    float: left;
+    margin-right: .76336%;
+    position: relative;
+    display: inline-block;
+    /*margin-left: -5px;*/
+    color: #fff;
+    margin-bottom: 2vh;
+    z-index: 60;
+    pointer-events: auto;
+}
+
+.ekocms-video-description {
+    color: #fff;
+    transition: all .25s ease-out;
+    opacity: 1;
+    margin-top: 3.5vmin;
+    position: relative;
+    float: left;
+    margin-right: .76336%;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-description p {
+    /*font-size: 2.3vmin;
+    line-height: 3.3vmin;
+    width: 75%;*/
+}
+
+.ekocom-quote-source {
+    font-size: 1.5vmin;
+    line-height: 1.9vmin;
+}
+
+.ekocms-video-description p {
+    line-height: 2.65vmin;
+    font-size: 1.6vmin;
+    font-family: Stolzl-Regular;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.ekocms-video-overlay-wrapper {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.ekocms-video-overlay-bg {
+    opacity: 0.6;
+    background-image: linear-gradient(-180deg, #6400FF 0%, #000000 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 7000;
+    position: absolute;
+}
+
+.ekocms-video-overlay-inner {
+    padding: 3vmin 15vw;
+    position: absolute;
+    top: 0;
+    z-index: 7001;
+    width: 100%;
+}
+
+.ekocms-video-overlay-title {
+    color: #fff;
+    float: left;
+    font-size: 2.7vmin;
+    line-height: 7vh;
+    vertical-align: middle;
+}
+
+.ekocms-video-overlay-close {
+    float: right;
+    cursor: pointer;
+}
+
+.ekocms-video-overlay-header {
+    width: 100%;
+    height: 11vh;
+    margin-top: 1vmin;
+}
+
+.ekocms-video-overlay-iframe {
+    width: 70vw;
+    height: 39.37vw;
+    max-width: 70vw;
+    max-height: 75vh;
+}
+
+.ekocms-video-overlay-description {
+    color: #fff;
+    margin-top: 2vh;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.ekocom-section-moments.ekocom-active .moments-pagination li {
+    opacity: .28;
+}
+
+.ekocom-section-moments .moments-pagination li {
+    margin-right: 4%;
+}
+
+.ekocom-section-moments .moments-pagination li:first-child {
+    margin-left: auto;
+}
+
+.ekocom-section-moments .moments-pagination li:last-child {
+    margin-right: auto;
+}
+
+.ekocom-section-moments .moments-pagination {
+    width: 45%;
+    margin-left: auto;
+}
+
+.momentThumbTitler:not(.active):hover {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment .momentTitleContainer {
+    padding: initial;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment .momentContentContainer {
+    padding: initial;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment {
+    width: 46%;
+    top: 23vh;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment .momentTop .image {
+    height: 33vh;
+    background-size: cover;
+}
+
+.ekocom-section-moments .moments-pagination li {
+    width: 22%;
+}
+
+.ekocom-active .ekocms-video-button .playContainer {
+    -webkit-transform: translate3d(-50%, -50%, 0) scaleX(1);
+    transform: translate3d(-50%, -50%, 0) scaleX(1);
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    opacity: 1;
+}
+
+.ekocms-video-button .playContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 10vh;
+    height: 10vh;
+    min-width: 35px;
+    min-height: 35px;
+}
+
+.ekocms-video-button .playContainer .play {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid #46f5c3;
+    border-radius: 50%;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    position: absolute;
+}
+
+.ekocms-video-button .playContainer .play svg {
+    width: 2.5vh;
+    fill: #fff;
+    margin-left: .4vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.eko-btn {
+    color: #fff;
+    width: 180px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.30);
+    /*border-radius: 2em;*/
+    height: 49px;
+    /*font-size: 1.7vmin;*/
+    background-image: url(../image/download.svg);
+    background-repeat: no-repeat;
+    background-position: -9% -25%;
+    font-size: 14px;
+}
+
+.eko-btn.withIcon {}
+
+.not-download {
+    background-image: none;
+    padding-left: 0px;
+}
+
+b {
+    font-weight: 700;
+    font-size: 105%;
+}
+
+i {
+    font-style: italic;
+}
+
+.ekocom-above .ekocms-video-description,
+.ekocom-above .ekocme-video-column-right {
+    -webkit-transform: translate3d(0, -45px, 0);
+    transform: translate3d(0, -45px, 0);
+    opacity: 0;
+}
+
+.ekocom-below .ekocms-video-description,
+.ekocom-below .ekocme-video-column-right {
+    -webkit-transform: translate3d(0, 45px, 0);
+    transform: translate3d(0, 45px, 0);
+    opacity: 0
+}
+
+.ekocom-section.ekocom-transition-in .ekocme-video-column-right,
+.ekocom-section.ekocom-transition-in .ekocms-video-description {
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-transition-delay: 0.46s;
+    transition-delay: 0.46s;
+}
+
+.ekocom-section.ekocom-transition-out .ekocme-video-column-right,
+.ekocom-section.ekocom-transition-out .ekocms-video-description {
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    -webkit-transition-delay: .06s;
+    transition-delay: .06s;
+}
+
+a {
+    color: #fff;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-description a:hover,
+a:hover {
+    color: #50E3C2;
+}
+
+.ekocom-section.ekocom-transition-out .ekocom-bg-rectangle {
+    -webkit-transition: all .33s ease-in;
+    transition: all .33s ease-in;
+}
+
+.ekocom-section.ekocom-transition-in .ekocom-bg-rectangle {
+    -webkit-transition: all .33s ease-in;
+    transition: all .33s ease-in;
+}
+
+.ekocom-section.ekocom-below .ekocom-bg-rectangle,
+.ekocom-section.ekocom-above .ekocom-bg-rectangle {
+    opacity: 0;
+}
+
+.ekocom-section.ekocom-above .ekocom-section-content .ekocom-bg-rectangle {
+    display: block;
+}
+
+.ekocom-section.ekocom-below .ekocom-section-content .ekocom-bg-rectangle {
+    display: block;
+    z-index: 0;
+}
+
+.ekocom-section-pillars .pillars-container .pillar-container .pillar-text {
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    margin-left: 70%;
+    font-size: 2em;
+}
+
+.ekocom-section-moments .moments-pagination.no-desc {
+    margin-left: 50.38168%;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment.no-desc {
+    bottom: auto;
+    top: auto;
+}
+
+.ekocom-section-moments.ekocom-active .moments-slide .ekocom-section.ekocom-moment .momentTop .playContainer:hover {
+    cursor: pointer;
+}
+
+.ekocom-section-pillars .pillars-container {
+    top: 18vh;
+    margin-left: 63.61832%;
+    width: 24.6%;
+}
+
+.ekocom-section-pillars .pillars-container .pillar-container.four-item {
+    height: 25%;
+}
+
+.isDesktop .ekocom-section-pillars .pillars-container:hover .pillar-container.four-item {
+    height: 20%;
+}
+
+.isDesktop .ekocom-section-pillars .pillars-container:hover .pillar-container {
+    height: 25%;
+}
+
+.isDesktop .ekocom-section-pillars .pillars-container .pillar-container.four-item:hover {
+    height: 33%;
+}
+
+.not-supported {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.ekocom-section-moments .moments-slide .ekocom-section.ekocom-moment .momentTop .image {
+    margin-bottom: 1.5vh;
+}
+
+.pagination_container {
+    width: 25vw;
+    height: 100vh;
+}
+
+/*@media (max-width:63em) {
+    .not-supported {
+        display: block;
+        background-color: #000;
+        background-image: linear-gradient(-180deg, #643DFF 0%, #110F14 98%);
+        z-index: 6999;
+        position: absolute;
+        pointer-events: none;
+    }
+    .not-supported .ekocom-section .ekocom-section-content .ekocom-description {
+        width: 100%;
+    }
+    .not-supported .ekocom-section .ekocom-section-content .ekocom-description p {
+        font-size: 12px;
+        margin-left: 7vw;
+    }
+    .not-supported .eko-btn {
+        margin-left: 7vw;
+        width: 180px;
+        margin-top: 3vh;
+        font-size: 12px;
+        text-transform: none;
+    }
+    .not-supported .ekocom-section-intro .ekocom-section-content .ekocom-intro-description {
+        bottom: auto;
+        top: 40vh;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+    }
+    .not-supported .ekocom-section-intro .ekocom-section-content .ekocom-intro-title {
+        width: 80%;
+    }
+}*/
+
+#cms-block-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#cms-block-bg-1 {
+    width: 81vw;
+    margin-left: 14vw;
+    margin-top: 10.8vh;
+    height: 78.33vh;
+    background: rgba(255, 255, 255, .08);
+}
+
+#cms-block-bg-2 {
+    width: 82vw;
+    margin-left: 9vw;
+    margin-top: 1.28vh;
+    height: 12.44vh;
+    background: rgba(255, 255, 255, .06);
+}
+
+.grid-2-3rd {
+    width: 67%;
+}
+
+.grid-1-3rd {
+    width: 33%;
+}
+
+.column2.grid-1-3rd.grid-1-3rd-bg {
+    margin-top: -19vh;
+    box-shadow: 0 20px 90px 0 rgba(43, 19, 8, 0.79);
+    margin-right: -10vw;
+    margin-left: 6.1%;
+    width: 36%;
+    height: 103%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divider {
+    width: 1.7em;
+    height: .25em;
+    background: #FFF;
+    margin-bottom: 1em;
+}
+
+#cms-side-title-bar {
+    opacity: 0.47;
+    transform: rotate(-90deg);
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 21px;
+    height: 1em;
+    width: 20em;
+    position: fixed;
+    top: 18.7vh;
+    text-align: right;
+    left: calc(-20em + 8vw);
+    transform-origin: 100% 50%;
+    text-transform: uppercase;
+}
+
+.pillar-wrapper .playContainer {
+    -webkit-transform: translate3d(-50%, -50%, 0) scaleX(1);
+    transform: translate3d(-50%, -50%, 0) scaleX(1);
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    /* transform: translate3d(-50%,-50%,0); */
+    width: 7vh;
+    height: 7vh;
+    min-width: 35px;
+    min-height: 35px;
+    opacity: 0;
+    transition: opacity .3 ease-in;
+}
+
+.pillar-wrapper .playContainer .play {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid #46f5c3;
+    border-radius: 50%;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    position: absolute;
+    cursor: pointer;
+}
+
+.pillar-wrapper .playContainer .play svg {
+    width: 2.5vh;
+    fill: #fff;
+    margin-left: .4vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pillar-container:hover .pillar-wrapper .playContainer {
+    opacity: 1;
+}
+
+.isDesktop .ekocom-section-pillars .pillars-container .pillar-container:hover {
+    height: 33%;
+    transform: scale(1.1);
+}
+
+.vertical-pillars-container {
+    width: 107%;
+    height: 60%;
+    float: left;
+    margin-top: 4em;
+}
+
+.vertical-pillars-container-item {
+    width: 19%;
+    height: 100%;
+    display: inline-block;
+    background: rgba(228, 171, 54, .2);
+    transition: all .2s ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+.vertical-pillars-container-item:hover {
+    transform: scale(1.2);
+    background: rgba(228, 171, 54, .8);
+    box-shadow: 0 20px 90px 0 rgba(43, 19, 8, 0.79);
+    z-index: 5;
+}
+
+.vertical-pillars-container.with-slides .vertical-pillars-container-item {
+    background: rgba(1, 166, 169, .2);
+    width: 13.5%;
+}
+
+.vertical-pillars-container.with-slides {
+    transition: margin-left .05s ease-in;
+}
+
+
+/*.vertical-pillars-container.with-slides:hover {
+/*.vertical-pillars-container-item{*/
+
+
+/*width:15%;*/
+
+
+/*margin-left: -2%;
+}*/
+
+.vertical-pillars-container.with-slides .vertical-pillars-container-item:hover {
+    background: rgba(1, 166, 169, .8);
+    /*width:19%;*/
+    /*width:25%;*/
+}
+
+.vertical-pillars-number {
+    position: absolute;
+    color: #fff;
+    opacity: 0.24;
+    font-family: "Stolzl-Bold";
+    font-size: 21vmin;
+    line-height: 15vmin;
+}
+
+.vertical-pillars-text-wrapper {
+    position: absolute;
+    color: #FFF;
+}
+
+.vertical-pillars-title {
+    width: 100%;
+    padding: 10vmin 2vmin 2vmin 2vmin;
+    font-family: "Stolzl-Bold";
+    font-size: 1.2em;
+}
+
+.vertical-pillars-description {
+    width: 100%;
+    padding: 0 2vmin;
+    opacity: .4;
+    font-family: "Montserrat";
+    font-size: 1.5vmin;
+}
+
+.vertical-pillars-description.hide-for-hover {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    transition-delay: .2s
+}
+
+.vertical-pillars-container-item:hover .vertical-pillars-description {
+    opacity: 1;
+}
+
+.vertical-pillars-container-item.pillar-hover {
+    width: 19%;
+}
+
+.vertical-pillars-img-wrapper {
+    width: 23.5%;
+    height: 100%;
+    margin-left: -23.5%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+    transition-delay: .1s;
+    transition: margin-left .15s ease-in, opacity .15s ease-in;
+}
+
+.vertical-pillars-img-wrapper.hover {
+    margin-left: -1%;
+    opacity: 1;
+}
+
+.vertical-pillars-img {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ekocom-above .vertical-pillars-img-wrapper,
+.ekocom-above .vertical-pillars-container-item {
+    -webkit-transform: translate3d(0, -45px, 0);
+    transform: translate3d(0, -45px, 0);
+    opacity: 0;
+}
+
+.ekocom-below .vertical-pillars-img-wrapper,
+.ekocom-below .vertical-pillars-container-item {
+    -webkit-transform: translate3d(0, 45px, 0);
+    transform: translate3d(0, 45px, 0);
+    opacity: 0;
+}
+
+.ekocom-section.ekocom-transition-in .vertical-pillars-img-wrapper,
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item {
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    -webkit-transition-delay: 0.06s;
+    transition-delay: 0.06s;
+}
+
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(2),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(2) {
+    -webkit-transition-delay: 0.16s;
+    transition-delay: 0.16s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(3),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(3) {
+    -webkit-transition-delay: 0.26s;
+    transition-delay: 0.26s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(4),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(4) {
+    -webkit-transition-delay: 0.36s;
+    transition-delay: 0.36s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(5),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(5) {
+    -webkit-transition-delay: 0.46s;
+    transition-delay: 0.46s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(7),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(7) {
+    -webkit-transition-delay: 0.56s;
+    transition-delay: 0.56s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item:nth-child(9),
+.ekocom-section.ekocom-transition-in .vertical-pillars-container-item:nth-child(9) {
+    -webkit-transition-delay: 0.66s;
+    transition-delay: 0.66s;
+}
+
+.ekocom-section.ekocom-transition-out .vertical-pillars-img-wrapper,
+.ekocom-section.ekocom-transition-out .vertical-pillars-container-item {
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-transition-delay: .06s;
+    transition-delay: .06s;
+}
+
+.ekocms-video-description .ekocom-intro-subtitle,
+.ekocom-intro-subtitle p,
+.ekocom-intro-subtitle {
+    font-family: "Montserrat";
+    font-size: 3vmin;
+    line-height: 3.8vmin;
+    color: #FFF;
+    z-index: 1;
+    position: relative;
+}
+
+.ekocom-intro-subtitle2 {
+    font-family: "Montserrat"!important;
+    font-size: 3.5vmin !important;
+    line-height: 4.8vmin !important;
+    color: #FFF;
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+}
+
+.three-column-item {
+    width: 32%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    padding-right: 3.5em;
+    vertical-align: top;
+    font-size: 1.7vmin;
+    font-family: Montserrat;
+}
+
+.three-column-item h3 {
+    font-family: "Montserrat";
+}
+
+.three-column-wrapper {
+    width: 100%;
+    height: 59%;
+    color: #FFF;
+}
+
+.vertical-pillars-container.expand-on-hover .vertical-pillars-container-item.story_hover {
+    width: 30.5%;
+    background: rgba(95, 58, 239, 0.8);
+    margin-right: 1.5%;
+    transform: scale(1.2);
+    box-shadow: 0 20px 90px 0 rgba(43, 19, 8, 0.79);
+    z-index: 5;
+}
+
+.vertical-pillars-container.expand-on-hover .vertical-pillars-container-item.story_hover .vertical-pillars-description {
+    opacity: 1;
+}
+
+.vertical-pillars-container.expand-on-hover .vertical-pillars-container-item {
+    background: rgba(95, 58, 239, 0.2);
+    transition: all .06s ease-out;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-vertical {
+    width: 41.7vw;
+    right: -1.5vw;
+    left: inherit;
+    height: 74.9vh;
+    background-position: top center;
+    background-size: contain;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal {
+    width: 55.9vw;
+    right: -7vw;
+    left: inherit;
+    height: 80vh;
+    margin-top: -4.5vh;
+    background-position: top center;
+    background-size: contain;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal2 {
+    width: 34.4vw;
+    right: -1.5vw;
+    left: inherit;
+    height: 39.9vh;
+    margin-top: -42vh;
+    background-position: center;
+    background-size: contain;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal3 {
+    width: 34.6vw;
+    right: -3.5vw;
+    left: inherit;
+    height: 50.2vh;
+    background-position: top center;
+    background-size: contain;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.ekocom-section .ekocom-section-content .ekocom-bg-rectangle.left-horizontal {
+    background-image: url(./image/graph.png);
+    background-color: transparent;
+    box-shadow: none;
+    background-size: contain;
+    width: 73vw;
+    height: 34.7vh;
+    left: 4.2vw;
+}
+
+.card-text-wrapper {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    font-size: 1.6vmin;
+    line-height: 2.65vmin;
+    top: 28%;
+    transform: translate(0, -50%);
+    padding: 5vmin;
+    font-family: "Montserrat";
+}
+
+.eko-btn-wrapper {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 17%;
+    font-size: 2vmin;
+    bottom: -4%;
+    transform: translate(-50%, 0%);
+    font-family: Montserrat;
+    left: 50%;
+    text-align: center;
+}
+
+.eko-btn-wrapper .eko-btn {
+    margin-right: 1em;
+    width: 41%;
+    text-transform: none;
+    font-size: 1.7vmin;
+    height: 100%;
+    line-height: 1.7vmin;
+}
+
+.ekocom-action-button {
+    height: 5.7vh;
+    background-color: #00CCFF;
+    width: 13.2vw;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ekocom-action-button p {
+    height: 3.5vh;
+    width: 100% !important;
+    color: #FFFFFF;
+    font-size: 1.53vmin !important;
+    font-weight: 500;
+    line-height: 3.5vmin !important;
+    text-align: center;
+    padding-top: 1.1vh;
+}
+
+.ekocom-type-display {
+    height: 11.3vh;
+    width: 19vw;
+    background-color: rgba(25, 26, 36, .1);
+    margin-bottom: .8vh;
+    transition: all .3s ease-in;
+}
+
+#ekocom-branded-content-ui .ekocom-type-display p, #ekocom-branded-content-ui-stack .ekocom-type-display p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.9vh;
+    height: 2.8vh;
+    color: #FFFFFF;
+    font-family: "Montserrat" !important;
+    font-weight: bold;
+    line-height: 22px !important;
+    padding-top: 4.4vh;
+    margin-bottom: 0px;
+    transition: all .3s ease-in;
+}
+.ekocom-type-display{
+    cursor: pointer;
+}
+#ekocom-branded-content-ui-stack .ekocom-branded-display-icon-list-content{
+    background-position: bottom center;
+}
+
+.ekocom-industry-icon {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.ekocom-industry-icon.mp {
+    width: 14vw;
+    height: 3.8vh;
+}
+
+.ekocom-industry-icon.pt {
+    width: 14.6vw;
+    height: 3.8vh;
+    margin-left: 2vw;
+}
+
+.ekocom-branded-action-buttons {
+    margin-left: .4vw;
+    margin-top: 7vh;
+}
+
+.ekocom-branded-display-icon-list {
+    margin-left: 37vw;
+    transition: all .3s ease-in;
+    width: 19.8vw;
+}
+
+.ekocom-branded-display-icon-list-content {
+    height: 11.3vh;
+    width: 19vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.ekocom-branded-display-icon-list-content.automotive {
+    background-image: url('../image/automotive.png');
+}
+
+.ekocom-branded-display-icon-list-content.lifestyle {
+    background-image: url('../image/lifestyle.png');
+}
+
+.ekocom-branded-display-icon-list-content.beverage {
+    background-image: url('../image/beverage.png');
+}
+
+.ekocom-branded-display-icon-list-content.entertainment {
+    background-image: url('../image/entertainment.png');
+}
+
+.ekocom-branded-display-icon-list-content.science {
+    background-image: url('../image/science.png');
+}
+
+.ekocom-branded-display-icon-list-content.other {
+    background-image: url('../image/other.png');
+}
+
+.ekocom-branded-display-icon-list-wrapper {
+    overflow: hidden;
+    margin-top: -4.5vh;
+}
+
+
+
+.ekocom-quote-subtext {
+    font-size: 1.5vh;
+    padding-top: 4.5vh;
+}
+
+.ekocom-quote-icon {
+    background-image: url(./image/portfolio_syfy.png);
+    height: 3.2vh;
+    /* width: 3.2vw; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    margin-top: 3vh;
+}
+
+
+.ekocom-slide-pagination {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1
+}
+
+.ekocom-slide-pagination.ekocom-rootslide {
+    z-index: 6000
+}
+
+.ekocom-slide-pagination li {
+    position: relative;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: hsla(0, 0%, 100%, .6);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    list-style-type: circle;
+    list-style: initial;
+    list-style-position: inside;
+}
+
+.ekocom-slide-pagination:before {
+    -webkit-transition: top .6s;
+    transition: top .6s;
+    position: absolute;
+    top: 0;
+    margin: 6px 0 0 28px;
+    z-index: 2;
+    vertical-align: middle;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: hsla(0, 0%, 100%, 0);
+    content: "";
+    border-radius: 25px;
+}
+
+.ekocom-slide-pagination.ekocom-section-0:before {
+    top: 0;
+    background: #fff;
+}
+
+.ekocom-slide-pagination.ekocom-section-1:before {
+    top: 35px;
+    background: #fff
+}
+
+.ekocom-slide-pagination.ekocom-section-2:before {
+    top: 70px;
+    background: #fff
+}
+
+.ekocom-slide-pagination.ekocom-section-3:before {
+    top: 105px;
+    background: #fff
+}
+
+.ekocom-slide-pagination.ekocom-section-4:before {
+    top: 140px;
+    background: #fff
+}
+
+.ekocom-slide-pagination.ekocom-section-5:before {
+    top: 175px;
+    background: #fff
+}
+
+.ekocom-slide-pagination.ekocom-section-6:before {
+    top: 210px;
+    background: #fff
+}
+
+.ekocom-quote-img {
+    background-image: url(./image/brands_quotes.png);
+    width: 6.5vw;
+    height: 8.3vh;
+    margin-top: -25vmin;
+    margin-left: -4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.site-section.partners .column2{
+    margin-top: -48%;
+}
+
+.column{
+
+}
+
+.brands .ekocom-section .ekocom-section-content .ekocom-description.column2{
+  margin-top: -11vmin;
+}
+
+.ekocom-action-button{
+  margin-top: 11.7vh;
+  margin-left: 14vw;
+}
+
+/*@media (min-width:1860px) {
+    .partners .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -50%;
+    }
+}*/
+/*@media (max-width:1815px) {
+    .partners .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -56%;
+    }
+}*/
+
+/*@media (max-width:1565px) {
+    .ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal {
+        width: 50.9vw;
+        right: -5vw;
+    }
+}
+
+@media (max-width:1565px) {
+    .site-section.partners .column2{
+        margin-top: -75.5vh;
+    }
+    .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -58%;
+    }
+}
+
+@media (max-width:1405px) {
+    .site-section.partners .column2{
+        margin-top: -75.5vh;
+    }
+    .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -69%;
+    }
+}
+
+@media (max-width:1230px) {
+    .ekocom-quote-box{
+      width: 100%;
+    }
+}
+@media (max-width:1200px) {
+    .site-section.partners .column2 {
+        margin-top: -78.5vh;
+    }
+    .ekocom-section .ekocom-section-content .ekocom-description p {
+        font-size: 2vmin;
+        line-height: 3vmin;
+    }
+}
+@media (max-width: 1140px){
+    .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -76%;
+    }
+}
+
+@media (max-width: 1130px){
+    .site-section.partners .column2 {
+        margin-top: -74.5vh;
+    }
+}
+
+@media (max-width: 1025px){
+    .ekocom-section .ekocom-section-content .ekocom-title {
+        font-size: 5vmin;
+        line-height: 6vmin;
+    }
+}*/
+
+.site-section.sparks .column2{
+    margin-top: -35vh;
+}
+
+.site-section.branded_content .column2{
+    margin-top: -69vh;
+}
+
+.site-section.portfolio .column2{
+    margin-top: -81vh;
+}
+.industry .ekocom-description.ekocom-intro-description.column.column2{
+  float: right;
+  margin: 0;
+  margin-top: -15vh;
+  margin-right: -6vw;
+}
+#ekocom-branded-content-ui-stack .ekocom-type-display{
+  width: 32%;
+}
+#ekocom-branded-content-ui-stack .ekocom-branded-display-icon-list{
+  margin: 0 auto;
+}
+#ekocom-branded-content-ui-stack .ekocom-type-display p{
+  padding-top: 2vh;
+  text-align: center;
+}
+
+/*@media (max-width: 954px){
+  #section_template > section.ekocom-section.ekocom-section-intro.ekocom-active.site-section.brands > div > div.ekocom-description.ekocom-intro-description.column.column2 > p.ekocom-brands-quote {
+    margin-top: 0;
+  }
+}
+@media (max-width: 855px){
+  .ekocom-section .ekocom-section-content .ekocom-description.column1 {
+       margin-top: 0vmin;
+  }
+}
+@media (max-width: 767px){
+  .site-section.partners .column2 {
+      margin-top: -52.5vh;
+  }
+}
+@media (max-width: 704px){
+  .site-section.partners .column2 {
+      margin-top: -56.5vh;
+  }
+}
+@media (max-width: 64em) and (orientation: portrait){
+  .ekocom-section-intro .ekocom-section-content .ekocom-intro-title {
+      font-size: 7vmin;
+      line-height: 8vmin;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-description.column1{
+      width: 100%;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-description.column2{
+    margin-top: 0;
+    margin-left: 41%;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-description p{
+      width: 100%;
+  }
+  .ekocom-action-button{
+    width: 23.2vw;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal{
+    right: 0;
+    height: 41vh;
+    margin-left: 0px;
+    margin-top: -20%;
+    background-position: top;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-vertical{
+    background-position: top;
+    height: 38vh;
+  }
+  .branded_content .ekocom-section .ekocom-section-content .ekocom-description.column2{
+    margin-top: -11%;
+    margin-left: 34%;
+  }
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column2{
+    height: 20%;
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 0%;
+  }
+  .ekocom-quote-img{
+    background-image: url(./image/brands_quotes.png);
+    margin-top: -13%;
+    margin-left: 2px;
+  }
+  .sparks .ekocom-section .ekocom-section-content .ekocom-description.column2{
+    height: 25%;
+    width: 100%;
+    left: 0;
+    margin-left: 27%;
+    margin-top: 4%;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-bg-rectangle.right-horizontal2{
+    top: 0;
+    margin-top: 0;
+    background-position: top;
+    width: 60%;
+  }
+  .ekocom-video-img-play-btn{
+    width: 8vh;
+    height: 8vh;
+    margin-left: 26%;
+    margin-top: 8%;
+  }
+  .ekocom-video-img-play-btn svg{
+    width: 2.3vw;
+    margin-top: 2.3vh;
+    margin-left: 2.8vw;
+  }
+  .ekocom-section .ekocom-section-content .ekocom-bg-rectangle.left-horizontal{
+    margin-top: -10%;
+  }
+}
+@media (max-width: 1565px){
+  .industry .ekocom-action-button{
+    width: 40%;
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+  .ekocom-action-button{
+    width: 30%;
+  }
+  .ekocom-action-button p{
+    font-size: 1.3vmin !important;
+  }
+}
+@media (max-width: 1439px) {
+  .ekocom-quote-img {
+    margin-top: -55%;
+  }
+}
+@media (max-width: 1350px){
+  .ekocom-action-button{
+    width: 40%;
+  }
+  .ekocom-action-button p{
+    font-size: 1.5vmin !important;
+  }
+}
+@media (max-width: 1276px) {
+  .ekocom-quote-img {
+    margin-top: -66%;
+  }
+}
+@media (max-width: 1200px) {
+  .ekocom-quote-img {
+    margin-top: -60%;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2 {
+    margin-top: -50%;
+  }
+}
+@media (max-width: 1110px) {
+  .ekocom-quote-img {
+    margin-top: -70%;
+  }
+  .ekocom-action-button{
+    width: 45%;
+  }
+}
+
+@media (max-width: 1024px){
+    .site-section.partners .column2 {
+        margin-top: -50.5vh;
+    }
+    .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -62%;
+    }
+    .ekocom-quote-text{
+      font-size: 2vmin;
+      padding-top: 3.8vh;
+    }
+    .ekocom-quote-subtext{
+      font-size: 1.1vmin;
+    }
+    .ekocom-quote-box {
+        height: 21vh;
+        margin-top: 2.7vh;
+    }
+    .ekocom-quote-icon{
+      margin-top: 1.3vh;
+    }
+    #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+      margin-top: -60%;
+    }
+    .ekocom-quote-img {
+      margin-top: -54%;
+    }
+    .ekocom-brands-quote{
+      margin-top: 0%;
+    }
+    .brands .ekocom-description.ekocom-intro-description.column.column1 p {
+      margin-top: -3%;
+      font-size: 3vmin;
+      line-height: 3.8vmin;
+    }
+    .brands .ekocom-description.ekocom-intro-description.column.column2 {
+      margin-top: 3%;
+    }
+    .brands .ekocom-description.ekocom-intro-description.column.column2 p {
+      font-size: 2.2vmin;
+      line-height: 3.3vmin;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: -40%;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: -40%;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: 0;
+  }
+  .partners .ekocom-description.ekocom-intro-description.column.column1 p {
+    font-size: 2.2vmin;
+    line-height: 3.3vmin;
+  }
+}
+@media (max-width: 1000px) {
+  .ekocom-action-button {
+      width: 50%;
+  }
+}
+@media (max-width: 979px) {
+  .ekocom-quote-text{
+    padding-top: 4.8vh;
+  }
+  .ekocom-quote-subtext{
+    padding-top: 4vh;
+  }
+}
+@media (max-width: 969px) {
+  .ekocom-action-button {
+      width: 50%;
+  }
+  .portfolio .ekocom-description.ekocom-intro-description.column.column1{
+    width: 55%;
+    margin-top: 1vmin;
+  }
+  .portfolio .font-size-1.ekocom-title.ekocom-intro-title {
+    font-size: 5.5vmin;
+  }
+  .portfolio .ekocom-description.ekocom-intro-description.column.column2{
+    margin-left: 58%;
+    margin-top: -62%;
+  }
+  .partners .ekocom-action-button {
+      margin-left: 31%;
+      margin-top: 4%;
+  }
+}
+
+@media (max-width: 966px) {
+  .ekocom-branded-content-ui{
+
+  }
+}
+@media (max-width: 965px) {
+  .ekocom-brands-quote {
+      margin-top: 0%;
+  }
+}
+
+@media (max-width: 954px) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: -12%;
+  }
+  .ekocom-quote-img {
+      display: none;
+  }
+  .branded_content .ekocom-action-button {
+      width: 35%;
+  }
+  .ekocom-quote-box {
+      height: 18vh;
+  }
+  .ekocom-quote-text{
+    padding-top: 2.7vh;
+  }
+  .ekocom-quote-subtext {
+      padding-top: 2vh;
+  }
+  .ekocom-quote-icon {
+      margin-top: 1.1vh;
+  }
+  .portfolio .ekocom-action-button{
+    margin-top: 11%;
+    width: 45%;
+    margin-left: 33%;
+  }
+  .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+      margin-top: -53%;
+  }
+}
+@media (max-width: 954px) and (orientation: landscape){
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: -50%;
+  }
+  .ekocom-action-button {
+      width: 45%;
+  }
+}
+@media (max-width: 949px) and (orientation: portrait){
+  .ekocom-industry-icon{
+    margin-top: 0;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.industry.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column1 > div.ekocom-branded-action-button-list > div:nth-child(1){
+    margin-top: 0;
+  }
+  .ekocom-branded-action-button-list {
+    margin-top: -10%;
+  }
+  .industry .ekocom-description.ekocom-intro-description.column.column2 {
+    margin-left: 0%;
+    left: 0;
+    width: 100%;
+    margin-top: 2%;
+  }
+  #ekocom-branded-content-ui{
+    display: none;
+  }
+  #ekocom-branded-content-ui-stack{
+    display: block;
+  }
+  .ekocom-type-display{
+    display: inline-block;
+  }
+}
+@media (max-width: 917px) {
+  .ekocom-quote-img{
+    margin-top: -16%;
+  }
+}
+@media (max-width: 899px) {
+  .ekocom-action-button p{
+    font-size: 1.6vmin !important;
+  }
+}
+@media (max-width: 860px) {
+  .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+      margin-top: -56%;
+  }
+}
+@media (max-width: 840px) {
+  .ekocom-action-button p{
+    font-size: 1.7vmin !important;
+  }
+}
+@media (max-width: 810px) {
+  .ekocom-action-button p{
+    font-size: 1.6vmin !important;
+  }
+}
+@media (max-width: 800px) {
+  .ekocom-quote-img{
+    margin-top: -20%;
+  }
+  p.ekocom-quote-source{
+    font-size: 2.3vmin !important;
+  }
+}
+@media (max-width: 785px) {
+  .ekocom-action-button p{
+    margin-top: 0.4vmin;
+  }
+  .portfolio .ekocom-description.ekocom-intro-description.column.column1 {
+      width: 65%;
+      margin-left: 18%;
+      margin-top: -3%;
+  }
+  .portfolio .ekocom-description.ekocom-intro-description.column.column2 {
+      margin-left: 26%;
+      margin-top: -9%;
+  }
+  .ekocom-quote-text{
+    font-size: 2.6vmin;
+  }
+  .ekocom-quote-subtext{
+    font-size: 1.4vmin;
+  }
+}
+@media (max-width: 770px) {
+  .ekocom-action-button p{
+    margin-top: 0.4vmin;
+  }
+}
+@media (max-width: 768px) {
+  .ekocom-action-button p{
+    margin-top: 0.4vmin;
+  }
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+      font-size: 24px;
+      line-height: 32px;
+  }
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column2 p {
+      font-size: 2.3vmin;
+  }
+  .partners .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+      font-size: 2.3vmin;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: 0;
+  }
+}
+@media (max-width: 700px) {
+  .ekocom-action-button p{
+    font-size: 1.8vmin !important;
+    margin-top: 0.5vmin;
+  }
+}
+@media (max-width: 680px) {
+  .ekocom-action-button p{
+    font-size: 2vmin !important;
+    margin-top: 0.5vmin;
+  }
+  .ekocom-action-button {
+    width: 50%;
+  }
+}
+@media (max-width: 621px) {
+  .ekocom-quote-img{
+    margin-top: -27%;
+    width: 12%;
+  }
+}
+@media (max-width: 612px) {
+  .ekocom-action-button p{
+    margin-top: 0.8vmin;
+  }
+}
+@media (max-width: 580px) {
+  .ekocom-quote-img{
+    margin-top: -30%;
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .ekocom-quote-img{
+    margin-top: -38%;
+    width: 15%;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.branded_content.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: -12%;
+  }
+}
+@media (max-width: 470px) {
+  .ekocom-section .ekocom-section-content .ekocom-description .ekocom-quote-img{
+    margin-top: -45%;
+    width: 15%;
+  }
+}
+@media (max-width: 425px) {
+  p.ekocom-quote-source{
+    font-size: 3vmin !important;
+  }
+}
+@media (max-width: 414px) {
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+   font-size: 4vmin;
+   line-height: 5vmin;
+   margin-top: 0%;
+  }
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column2 p {
+   font-size: 3vmin;
+   line-height: 4vmin;
+   margin-top: 0%;
+  }
+  .partners .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+   font-size: 3vmin;
+   line-height: 4vmin;
+   margin-top: 0%;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: 0;
+  }
+}
+@media (max-width: 412px) {
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+   font-size: 4vmin;
+   line-height: 5vmin;
+   margin-top: 0%;
+  }
+  .brands .ekocom-section .ekocom-section-content .ekocom-description.column2 p {
+   font-size: 3vmin;
+   line-height: 4vmin;
+   margin-top: 0%;
+  }
+  .partners .ekocom-section .ekocom-section-content .ekocom-description.column1 p {
+   font-size: 3vmin;
+   line-height: 4vmin;
+   margin-top: 0%;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: 0;
+  }
+}
+@media (max-width: 360px) {
+  .brands .ekocom-description.ekocom-intro-description.column.column1 p{
+    margin-top: 0%;
+    font-size: 4vmin;
+    line-height: 5vmin;
+  }
+  .brands .ekocom-description.ekocom-intro-description.column.column2 p{
+    font-size: 3vmin;
+    line-height: 4.1vmin;
+  }
+  .partners .ekocom-description.ekocom-intro-description.column.column1 p{
+    font-size: 3vmin;
+    line-height: 4.1vmin;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2{
+    margin-top: 0;
+  }
+  #section_template > section.ekocom-section.ekocom-section-intro.ekocom-active.site-section.brands > div > div.ekocom-description.ekocom-intro-description.column.column2 > p.ekocom-brands-quote{
+      margin-top: -3%;
+  }
+
+}
+@media (min-width:1566px) and (max-width:1705px){
+    .partners .ekocom-description.ekocom-intro-description.column.column2 {
+        margin-top: -60%;
+    }
+}*/
+/*@media (min-height: 945px) {
+  .partners .ekocom-description.ekocom-intro-description.column.column2 {
+    margin-top: -50%;
+  }
+}
+@media (max-height: 905px) {
+  .ekocom-quote-img {
+    margin-top: -48%;
+  }
+}
+@media (max-height: 810px) {
+  .ekocom-quote-img {
+    margin-top: -44%;
+  }
+}
+@media (max-height: 739px) {
+  .ekocom-quote-img {
+    margin-top: -36%;
+  }
+}
+@media (max-height: 676px) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2 {
+    margin-top: -23%;
+  }
+}
+@media (max-height: 665px) {
+  .ekocom-quote-img {
+    margin-top: -32%;
+  }
+}
+@media (max-height: 662px) {
+  .ekocom-quote-img {
+      margin-top: -34%;
+  }
+}*/
+/*@media (max-height: 662px) and (max-width: 1224px) {
+  .ekocom-quote-img {
+      margin-top: -40%;
+  }
+}
+@media (max-height: 662px) and (max-width: 1200px) {
+  .ekocom-quote-img {
+      margin-top: -35%;
+  }
+}
+@media (max-height: 662px) and (max-width: 1064px) {
+  .ekocom-quote-img {
+      margin-top: -44%;
+  }
+}
+@media (max-height: 662px) and (max-width: 1024px) {
+  .ekocom-quote-img {
+      margin-top: -52%;
+  }
+}*/
+/*@media (max-height: 620px) {
+  .ekocom-quote-img {
+      margin-top: -30%;
+  }
+}
+@media (max-height: 575px) {
+  .ekocom-quote-img {
+      margin-top: -24%;
+      margin-left: -8%;
+  }
+}
+@media (max-height: 520px) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2 {
+    margin-top: -20%;
+  }
+}
+@media (max-height: 480px) {
+  #section_template > section.ekocom-section.ekocom-section-intro.site-section.partners.ekocom-active.active > div > div.ekocom-description.ekocom-intro-description.column.column2 {
+    margin-top: -16%;
+  }
+}
+@media (max-height: 470px) {
+  .ekocom-quote-img {
+      margin-top: -21%;
+  }
+}
+@media (max-height: 460px) {
+  .ekocom-quote-img {
+      margin-top: -17%;
+  }
+}*/
+
+/*
+@media (max-width:1300px) {
+    .ekocom-action-button p {
+        font-size: 1.25vmin !important;
+    }
+}
+
+@media (max-width:1010px) {
+    .ekocom-description.ekocom-intro-description.column2 {
+        width: 24vw !important;
+    }
+}
+@media (max-width:900px) {
+    .ekocom-action-button p {
+        font-size: 1vmin !important;
+    }
+}*/

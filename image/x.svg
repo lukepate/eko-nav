@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="15.5" cy="15.5" r="15.5"></circle>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-native-(play)" transform="translate(-1263.000000, -101.000000)">
+            <g id="x" transform="translate(1265.000000, 103.000000)">
+                <g id="play">
+                    <g id="Oval">
+                        <use fill-opacity="0.2" fill="#191A24" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-1"></use>
+                        <circle stroke="#9600FF" stroke-width="1.4" cx="15.5" cy="15.5" r="16.2"></circle>
+                    </g>
+                </g>
+                <g id="ios-close-empty" transform="translate(10.568182, 11.272727)" fill="#FFFFFF">
+                    <g id="Layer_1">
+                        <polygon id="Shape" points="9.25743371 0 4.92154356 4.33075284 0.606202652 0.0205492424 0 0.626751894 4.31534091 4.93181818 0 9.24202178 0.606202652 9.84308712 4.92154356 5.53802083 9.25743371 9.86363636 9.86363636 9.26257102 5.52774621 4.93181818 9.86363636 0.606202652"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
