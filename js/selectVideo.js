@@ -15,8 +15,8 @@ $( document ).ready(function() {
 		var title = $(this).data('title');
 		var desc = $(this).data('desc');
 		// Find section (branded or sparks)
-		if ( $(this).closest('section').hasClass('branded') ) {
-			var section = 'section.branded';
+		if ( $(this).closest('section').hasClass('partners') ) {
+			var section = 'section.partners';
 		} else if ( $(this).closest('section').hasClass('sparks') ) {
 			var section = 'section.sparks';
 		}
@@ -44,8 +44,8 @@ $( document ).ready(function() {
 			var title = currentVid.data('title');
 			var desc = currentVid.data('desc');
 			// Find section (branded or sparks)
-			if ( currentVid.closest('section').hasClass('branded') ) {
-				var section = 'section.branded';
+			if ( currentVid.closest('section').hasClass('partners') ) {
+				var section = 'section.partners';
 			} else if ( currentVid.closest('section').hasClass('sparks') ) {
 				var section = 'section.sparks';
 			}

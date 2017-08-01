@@ -71,7 +71,7 @@ define(function() {
         let target = sideMenuItems[index];
         var target_id = target.dataset.tip.toLowerCase().replace(' ','_')
         removeSubMenuActiveClass();
-        target.classList.add('active works');
+        target.classList.add('active');
         removeAndAddCategoryTitleActiveClass(target_id, true, index)
     }
 

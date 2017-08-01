@@ -134,23 +134,24 @@
     transition: all 1s;
 }
 .ekocom-section-description{
-  /*height: 301.02px;
-  width: 500px;*/
   font-size: 18px;
+  padding-top: 16px;
+  width: 80%;
+
 
   /*opacity: 0.05;
   background-color: #20002F;
   box-shadow: 0 20px 50px 0 rgba(0,0,0,0.4);*/
 }
 .ekocom-section-description p{
-	color: #FFFFFF;
-	font-family: 'Montserrat';
-	/*font-size: 2.09em;*/
-    font-size: 18px;
-    line-height: 1.35em;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-  margin-top: 30px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  /* font-size: 2.09em; */
+  font-size: 18px;
+  line-height: 26px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-top: 5px;
   width: 80%;
 
 }
@@ -160,9 +161,7 @@
 .partners .ekocom-section-description p{
     width: 79%;
 }
-.brands .ekocom-section-description{
-    padding-top: 3%;
-}
+
 .brands .ekocom-section-description p{
 	/*width: 70%;*/
 }
@@ -541,7 +540,7 @@
   display: none;
 }
 .mouse-icon{
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .pistons-desktop {
     position: absolute;
@@ -592,7 +591,7 @@ a{
     .ekocom-section-description{
       position: absolute;
       left: 40%;
-      width: 100%;
+      width: 97%;
       font-size: 8px;
       line-height: 16px;
 
@@ -612,19 +611,19 @@ a{
         position: relative;
         font-size: 10pt;
         line-height: 13pt;
-        width: 65%;
-        left: 18%;
+        width: 82%;
+        left: 30px;
     }
     .branded-title{
       position: absolute;
-      left: 5%;
-      top: 7%;
+      left: 0%;
+      top: 0%;
     }
     .branded-description{
       position: absolute;
       top: 36%;
-      left: 23%;
-      width: 68%;
+      left: 6%;
+      width: 84%;
       font-size: 18pt;
       line-height: 26pt;
     }
@@ -656,7 +655,7 @@ a{
         width: 100%;
         display: block;
         position: absolute;
-        top: 14%;
+        top: 4%;
         left: 4%;
         color: white;
     }
@@ -676,11 +675,11 @@ a{
     }
 
     .mobile-three-content{
-      width: 80%;
+      width: 100%;
       color: white;
       position: absolute;
-      top: 14%;
-      left: 11%;
+      top: 0%;
+      left: 0%;
     }
     .mobile-three{
       opacity: 0;
@@ -761,5 +760,9 @@ a{
     }
     .ekocom-quote-box-subtext {
         font-size: 8px;
+    }
+    .pistons{
+      top: -110%;
+      position: relative;
     }
 }

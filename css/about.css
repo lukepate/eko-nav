@@ -4,7 +4,6 @@ body {
     background-color: rgba(0, 0, 0, 1);
     background-position: 0px 0%;
     background-size: 100% 600%;
-    height: 100%;
 }
 /*new nav css*/
 
@@ -102,6 +101,37 @@ body {
     -moz-transition-delay: 0.12s;
     -o-transition-delay: 0.12s;
     transition-delay: 0.12s;
+}
+
+.ekocom-header .ekocom-header-nav a {
+  color: transparent;
+  opacity: 0.5;
+  transition: all 0.82s;
+  transition-property: all;
+  transition-duration: 0.82s;
+  transition-timing-function: initial;
+  transition-delay: 0.12s;
+  -webkit-transition-delay: 0.12s;
+  -moz-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+.ekocom-header .ekocom-header-nav a:hover {
+  color: white;
+  opacity: 1;
+  transition: all 0.82s;
+  transition-property: all;
+  transition-duration: 0.82s;
+  transition-timing-function: initial;
+  transition-delay: 0.12s;
+  -webkit-transition-delay: 0.12s;
+  -moz-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.header-cta-container{
+  color: white!important;
 }
 
 .dropdown-content a:hover {

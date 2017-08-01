@@ -12,7 +12,14 @@ define(['js/paginationNav'], function(paginationNav) {
     }
 
     function goNext() {
-        if (isChanging || currentIndex == ekocomSections.length - 1 ) return;
+    if ( $('.desktop:visible').css('display') == 'block' ){
+      var ekocomSections = 3;
+    }
+    if ( $('.mobile:visible').css('display') == 'block' ){
+      var ekocomSections = 5;
+    }
+
+        if (isChanging || currentIndex == ekocomSections - 1 ) return;
         isChanging = true;
         currentIndex++;
         setTimeout(function() {
@@ -20,7 +27,8 @@ define(['js/paginationNav'], function(paginationNav) {
         }, 550);
 
         jumpToSection(currentIndex, 'down');
-    }
+      }
+
 
     function goPrev() {
         if (isChanging || currentIndex === 0) return;

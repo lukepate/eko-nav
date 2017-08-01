@@ -333,69 +333,73 @@ $('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, curren
 	// 		return false;
 	// });
 
-	$(".nav-background").mouseover(function () {
-					 $('.nav-container-background').css({'background-color': '#223B90'});
-						// 	setTimeout(function(){
-					 		$(".dropdown-content").show();
+		$(".nav-background").mouseover(function () {
 
-						// }, 300);
-						if ( $('.burger-icon:visible').css('display') == 'block' ){
-							// $(".ekocom-logo-container").css('opacity', '0');
-							// $('.mobile-nav-content').show();
-							$('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
+						$(".dropdown-content").show();
+						$('.nav-container-background').css({'background-color': '#223B90'});
+						$('.ekocom-header .ekocom-header-nav a').css({'color': 'white'});
+						$('.contact-buton').css({'color': 'black'});
 
-						}
-			 }).mouseout(function () {
-					 $('.nav-container-background').css({'background-color': 'transparent'});
-					 $(".dropdown-content").hide();
 
-					 if ( $('.burger-icon:visible').css('display') == 'block' ){
-						 $('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
-						//  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
-						//  $('.mobile-nav-content').hide();
-						//  $(".ekocom-logo-container").css('opacity', '1');
-					 }
-			 });
 
-			 $('.burger-icon').click(function (e) {
-				 e.preventDefault();
+							if ( $('.burger-icon:visible').css('display') == 'block' ){
+								// $(".ekocom-logo-container").css('opacity', '0');
+								// $('.mobile-nav-content').show();
+								$('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
 
-				//  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
-				 $('.mobile-nav-content').show();
-				 $('.nav-container-background-active').show();
-				 $(".ekocom-logo-container").hide();
-				 $('.mob-nav-close').show();
-				 $('.nav-container-background').css({'background-color': 'transparent'});
+								$('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
+								$('.burger-icon').click(function (e) {
+									e.preventDefault();
 
-			 });
-			 $('.mob-nav-close').click(function (e) {
-				 e.preventDefault();
+								 //  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
+									$('.mobile-nav-content').show();
+									$('.nav-container-background-active').show();
+									$(".ekocom-logo-container").hide();
+									$('.mob-nav-close').show();
+									$('.nav-container-background').css({'opacity': '0'});
 
-				//  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
-				$('.mobile-nav-content').hide();
-				$('.nav-container-background-active').show();
-				$(".ekocom-logo-container").show();
-				$('.mob-nav-close').fadeOut();
+								});
+								$('.mob-nav-close').click(function (e) {
+									e.preventDefault();
 
-			 });
+								 //  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
+								 $('.mobile-nav-content').hide();
+								 $('.nav-container-background-active').show();
+								 $(".ekocom-logo-container").show();
+								 $('.mob-nav-close').fadeOut();
 
-			 $('.mob-4').click(function (e) {
-				 e.preventDefault();
-				$('.mobile-button-content-4').toggle();
-			 });
+								});
 
-			 $('.mob-3').click(function (e) {
-				 e.preventDefault();
-				$('.mobile-button-content-3').toggle();
-			 });
+								$('.mob-4').click(function (e) {
+									e.preventDefault();
+								 $('.mobile-button-content-4').toggle();
+								});
 
-			 $('.mob-2').click(function (e) {
-				 e.preventDefault();
-				$('.mobile-button-content-2').toggle();
-			 });
+								$('.mob-3').click(function (e) {
+									e.preventDefault();
+								 $('.mobile-button-content-3').toggle();
+								});
 
-			 $('.mob-1').click(function (e) {
-				 e.preventDefault();
-				$('.mobile-button-content-1').toggle();
-			 });
+								$('.mob-2').click(function (e) {
+									e.preventDefault();
+								 $('.mobile-button-content-2').toggle();
+								});
+
+								$('.mob-1').click(function (e) {
+									e.preventDefault();
+								 $('.mobile-button-content-1').toggle();
+								});
+							}
+				 }).mouseout(function () {
+						 $('.nav-container-background').css({'background-color': 'transparent'});
+						 $('.ekocom-header .ekocom-header-nav a').css({'color': 'transparent'});
+						 $('.contact-buton').css({'color': 'black'});
+						 if ( $('.burger-icon:visible').css('display') == 'block' ){
+							 $('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
+							//  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
+							//  $('.mobile-nav-content').hide();
+							//  $(".ekocom-logo-container").css('opacity', '1');
+						 }
+				 });
+
 });
