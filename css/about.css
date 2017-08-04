@@ -105,8 +105,12 @@ body {
 }
 
 .ekocom-header .ekocom-header-nav a {
+
+  color: white;
+  opacity: 1;
+  /* transparent color for new nav
   color: transparent;
-  opacity: 0.5;
+  opacity: 0.5;*/
   transition: all 0.82s;
   transition-property: all;
   transition-duration: 0.82s;
@@ -287,7 +291,7 @@ a:link{
 
 .header-user-plus {
     display: inline-flex;
-    order: 2;
+    order: 1;
     cursor: pointer;
 }
 

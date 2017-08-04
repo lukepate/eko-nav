@@ -158,15 +158,28 @@ body.portfolio {
 }
 .ekocom-header-nav {
     order: 1;
-    margin-right: -26px;
+    margin-right: 15px;
+
+}
+.header-cta-container {
+    order: 1;
+    margin-right: 15px;
+    margin-top: 7px;
 }
 /*.mail-img{
   display: none;
 }*/
 
-
+.contactBtn{
+  margin-left: 20px;
+}
 
 @media (max-width: 720px) {
+  .header-user-plus {
+    display: inline-flex;
+    order: 2;
+    cursor: pointer;
+}
 
 
   .eko-btn {
@@ -816,7 +829,7 @@ img.closeVidBtn {
     width: 32px;
     cursor: pointer;
     text-align: right;
-    display: block;
+    display: none;
     left: 90%;
     position: absolute;
 }
@@ -910,5 +923,10 @@ img.closeVidBtn {
 .swipe-icon{
   display: none;
 }
-
+.ekocom-header-nav {
+  display: none;
+}
+.header-cta-container {
+    display: block;
+}
 }

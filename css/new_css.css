@@ -540,7 +540,10 @@
   display: none;
 }
 .mouse-icon{
-  margin-top: 62px;
+
+    margin-top: 55px;
+    width: 50px;
+
 }
 .pistons-desktop {
   position: absolute;
