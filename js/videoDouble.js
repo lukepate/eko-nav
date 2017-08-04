@@ -28,6 +28,11 @@ $( document ).ready(function() {
 
   	if ( vidDiv.hasClass('video-double-closed') ) {
 			// Hide description text and play btn
+			if ( vidDiv.hasClass('video-double-right')){
+				$('.video-double-left').hide();
+			} else {
+				$('.video-double-right').hide();
+			}
 			$('.video-double-left p, .video-double-right p').hide();
 			$('.playVidBtn', vidDiv).hide();
 			// Bring video div to front
@@ -48,6 +53,11 @@ $( document ).ready(function() {
 		var vid = $('video', vidDiv)[0];
 
 		// Hide close button
+		if ( vidDiv.hasClass('video-double-right')){
+			$('.video-double-left').show();
+		} else {
+			$('.video-double-right').show();
+		}
 		$('.closeVidBtn', vidDiv).hide();
 		// Stop video
 		vid.load();
@@ -69,27 +79,37 @@ $( document ).ready(function() {
 	$('.1-on-1-a').click(function (e) {
 		e.preventDefault();
    	$('.playVidBtn').toggle();
-		$('.play-b').toggle();
+		// $('.play-b').toggle();
 		$('.1-on-1-b').hide();
 		$('video').on('ended',function(){
 	 	$('.1-on-1-b').show();
  		});
 	});
+
 	$('.1-on-1-b').click(function (e) {
 		e.preventDefault();
 		$('.playVidBtn').toggle()
-		$('.play-a').toggle();
+		// $('.play-a').toggle();
 		$('.1-on-1-a').hide();
 		$('video').on('ended',function(){
 		$('.1-on-1-a').show();
 		});
 	});
 
+	$('.play-b ').click(function (e) {
+		e.preventDefault();
+		$('.play-b').show();
+	});
+	$('.play-a ').click(function (e) {
+		e.preventDefault();
+		$('.play-a').show();
+	});
+
+
+
 	$('.portfolio-carousel-mobile').on('swipe', function(event, slick, afterChange){
 		// $(this).hide()
-		if ($('.slick-current').attr('data-slick-index') == 1){
-					alert('this is 1')
-				}
+					// alert('this is 1')
 
 	});
 
@@ -213,11 +233,7 @@ $('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, curren
 
 
 
-		// $("ul li.slide").each(function(){
-		// 	 $(this).click(function(){
-		// 			$(this).toggleClass('li-active').siblings().removeClass('li-active');
-		// 	 });
-		//  });
+
 
 
 
@@ -334,72 +350,104 @@ $('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, curren
 	// });
 
 		$(".nav-background").mouseover(function () {
-
 						$(".dropdown-content").show();
 						$('.nav-container-background').css({'background-color': '#223B90'});
 						$('.ekocom-header .ekocom-header-nav a').css({'color': 'white'});
 						$('.contact-buton').css({'color': 'black'});
 
-
-
-							if ( $('.burger-icon:visible').css('display') == 'block' ){
-								// $(".ekocom-logo-container").css('opacity', '0');
-								// $('.mobile-nav-content').show();
-								$('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
-
-								$('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
-								$('.burger-icon').click(function (e) {
-									e.preventDefault();
-
-								 //  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
-									$('.mobile-nav-content').show();
-									$('.nav-container-background-active').show();
-									$(".ekocom-logo-container").hide();
-									$('.mob-nav-close').show();
-									$('.nav-container-background').css({'opacity': '0'});
-
-								});
-								$('.mob-nav-close').click(function (e) {
-									e.preventDefault();
-
-								 //  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
-								 $('.mobile-nav-content').hide();
-								 $('.nav-container-background-active').show();
-								 $(".ekocom-logo-container").show();
-								 $('.mob-nav-close').fadeOut();
-
-								});
-
-								$('.mob-4').click(function (e) {
-									e.preventDefault();
-								 $('.mobile-button-content-4').toggle();
-								});
-
-								$('.mob-3').click(function (e) {
-									e.preventDefault();
-								 $('.mobile-button-content-3').toggle();
-								});
-
-								$('.mob-2').click(function (e) {
-									e.preventDefault();
-								 $('.mobile-button-content-2').toggle();
-								});
-
-								$('.mob-1').click(function (e) {
-									e.preventDefault();
-								 $('.mobile-button-content-1').toggle();
-								});
-							}
+						setTimeout(function(){
+							$(".active-dot").show();
+						}, 200);
+						// $('.active-nav').css({'background-image': 'url(../image/active-dot.png)'});
+						if ( $('.burger-icon:visible').css('display') == 'block' ){
+						 //  $('.nav-container-background').css({'background-color': 'transparent', 'height': '0%'});
+							$('.nav-container-background').css({'background-color': 'transparent'});
+						 //  $('.mobile-nav-content').hide();
+						 //  $(".ekocom-logo-container").css('opacity', '1');
+						}
 				 }).mouseout(function () {
 						 $('.nav-container-background').css({'background-color': 'transparent'});
+
 						 $('.ekocom-header .ekocom-header-nav a').css({'color': 'transparent'});
+						 $('.active-nav').css({'background-image': 'none'});
+						 setTimeout(function(){
+						 $(".active-dot").hide();
+						 }, 200);
+						$('.nav-about').removeClass('active-nav').delay(3000);
 						 $('.contact-buton').css({'color': 'black'});
 						 if ( $('.burger-icon:visible').css('display') == 'block' ){
-							 $('.nav-container-background').css({'background-color': 'transparent', 'height': '30%'});
-							//  $('.nav-container-background').css({'background-color': '#223B90', 'height': '100%'});
+							//  $('.nav-container-background').css({'background-color': 'transparent', 'height': '0%'});
+							 $('.nav-container-background').css({'background-color': 'transparent'});
 							//  $('.mobile-nav-content').hide();
 							//  $(".ekocom-logo-container").css('opacity', '1');
 						 }
 				 });
+
+				 if ( $('.burger-icon:visible').css('display') == 'block' ){
+					 $('.burger-icon').click(function (e) {
+						 e.preventDefault();
+						 $('.mobile-nav-content').show();
+						 $('.nav-container-background-active').show();
+						 $(".ekocom-logo-container").hide();
+						 $('.mob-nav-close').show();
+						 $('.nav-container-background').css({'opacity': '0'});
+						 $(".ekocom-slide-pagination").hide();
+					 });
+					 $('.mob-nav-close').click(function () {
+
+						$('.mobile-nav-content').hide();
+						$('.nav-container-background-active').show();
+						$(".ekocom-logo-container").show();
+						$(".ekocom-slide-pagination").show();
+						$('.mob-nav-close').fadeOut();
+
+					 });
+
+					 $('.mob-4').click(function (e) {
+						 e.preventDefault();
+						$('.mobile-button-content-4').toggle();
+							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible').hide();
+
+							}else {
+								$('.contact-btn-mobile').show();
+							}
+						 });
+
+					 $('.mob-3').click(function (e) {
+						 e.preventDefault();
+						$('.mobile-button-content-3').toggle();
+							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-4:visible').hide();
+
+							}else {
+								$('.contact-btn-mobile').show();
+							}
+					 });
+					 $('.mob-2').click(function (e) {
+						 e.preventDefault();
+						$('.mobile-button-content-2').toggle();
+							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
+
+							}else {
+								$('.contact-btn-mobile').show();
+							}
+					 });
+
+					 $('.mob-1').click(function (e) {
+						 e.preventDefault();
+						$('.mobile-button-content-1').toggle();
+							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+								 $('.contact-btn-mobile, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
+							}else {
+								$('.contact-btn-mobile').show();
+							}
+					 });
+
+
+				 	}
+
+
 
 });

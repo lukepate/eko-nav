@@ -540,13 +540,14 @@
   display: none;
 }
 .mouse-icon{
-  margin-top: 30px;
+  margin-top: 62px;
 }
 .pistons-desktop {
-    position: absolute;
-    width: 60%;
-    top: -73%;
-    opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  top: -100%;
+  left:0%;
+  opacity: 0.6;
 }
 /*a .ekocom-eko-button-show{
 
@@ -614,6 +615,9 @@ a{
         width: 82%;
         left: 30px;
     }
+    .mob-icon{
+      padding-left: 41px;
+    }
     .branded-title{
       position: absolute;
       left: 0%;
@@ -621,7 +625,7 @@ a{
     }
     .branded-description{
       position: absolute;
-      top: 36%;
+      top: 28%;
       left: 6%;
       width: 84%;
       font-size: 18pt;

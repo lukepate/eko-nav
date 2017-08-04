@@ -15,7 +15,6 @@ define(function() {
     function removeAndAddCategoryTitleActiveClass(targetId, toClick, targetIndex) {
         for (var i = 0; i < categoryTitleItems.length; i++) {
             var item = categoryTitleItems[i];
-
             if (item.dataset.target.split('#')[1] === targetId) {
                 if (currentCategory != targetId) {
                     currentCategory = targetId;
@@ -26,6 +25,7 @@ define(function() {
                     sideMenu.className = 'ekocom-slide-pagination ekocom-rootslide ekocom-section-'+targetIndex;
                     if (item.classList.contains('collapsed')) {
                         $(item.dataset.target).collapse("show")
+                        
                     }
                 }
             } else {

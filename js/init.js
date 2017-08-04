@@ -28,14 +28,21 @@ function(navigation, updateVideoLink, galleryNavigation, paginationNav, pillarHo
             return false;
         } : arguments[2];
         // var lastTime = 0;
+        var x = 0;
+        var y = 0;
         var lastTime = 0,
             scrollings = [];
         var elem = document.querySelector('.ekocom-slide');
-        ['DOMMouseScroll', 'mousewheel'].map(function(mouseWheel) {
+        var vid = document.getElementById("myVideo");
+         ['DOMMouseScroll', 'mousewheel'].map(function(mouseWheel) {
+
             elem.addEventListener(mouseWheel, function(event) {
                 event.preventDefault();
+
                 if (isStopPropFn()) event.stopPropagation();
                 var delta = event.detail ? -event.detail : event.wheelDelta;
+
+
                 if (delta) {
                     if (Date.now() - lastTime > 200) {
                         scrollings = [];
@@ -48,17 +55,101 @@ function(navigation, updateVideoLink, galleryNavigation, paginationNav, pillarHo
                     var avgEnd = ~~getAvarage(scrollings.slice(-10));
                     var avgMiddle = ~~getAvarage(scrollings.slice(-70));
                     var isAccelerating = avgEnd >= avgMiddle;
+                    var vidR = document.getElementById("video-right");
+                    var vidL = document.getElementById("video-left");
+
+                    var mobT = document.getElementById("mobT");
+                    var mobB = document.getElementById("mobB");
+                    var iVid = document.getElementById("iVid");
+
                     if (isAccelerating) {
                         var direction = delta < 0 ? 'down' : 'up';
                         if (direction === 'down') {
                           if(navigation.getCurrentIndex() == 24) return;
                           // triggerClick('next');
+                          // document.getElementById("video-right").style.visibility = "hidden";
+
                             navigation.goNext();
+                            let a = navigation.getCurrentIndex();
+
+                            if(!vidR.paused){                               // vidR.pause();
+                              x = 1;
+                              vidR.pause();
+                            }
+                            if(!vidL.paused){                               // vidR.pause();
+                              y = 1;
+                              vidL.pause();
+                            }
+                            if(!mobB.paused){                               // vidR.pause();
+                              q = 1;
+                              mobB.pause();
+                            }
+                            if(!mobT.paused){                               // vidR.pause();
+                              g = 1;
+                              mobT.pause();
+                            }
+
+
+                              // vidR.pause()
+                              // vidL.pause()
+                              // vidR.removeClass('video-double-open');
+                              // vidR.classList.remove("video-double-open");
+                              // vidR.classList.remove("video-double-closed");
+                              // document.getElementById("video-right").remove("video-double-open");
+                              // document.getElementById("video-right").remove("video-double-closed");
+                              //
+                              // document.getElementById("video-double-right ").style.visibility = "visible";
+
+                              // $('.video-double-left p, .video-double-right p').show();
+                              // $('.playVidBtn', vidDiv).show();
+                              //
+
+
 
                         } else {
                           if(navigation.getCurrentIndex() == 0) return;
                           // triggerClick('prev');
+
+
                             navigation.goPrev();
+                            let a = navigation.getCurrentIndex();
+
+                            // right video pause when scroll
+                            if(vidR.paused && x > 0 && a == 0){
+                            x = 0;
+                            setTimeout(function () {
+                              vidR.play();
+                            }, 1000);
+
+                            // left video pause when scroll
+                            };
+                            if(vidL.paused && y > 0 && a == 0){
+                              y = 0;
+                              setTimeout(function () {
+                                vidL.play();
+                              }, 1000);
+                            };
+                            if(mobT.paused && g > 0 && a == 1){
+                              g = 0;
+                              setTimeout(function () {
+                                mobT.play();
+                              }, 800);
+                            };
+                            if(mobB.paused && q > 0 && a == 1){
+                              q = 0;
+                              setTimeout(function () {
+                                mobB.play();
+                              }, 800);
+                            };
+
+
+                            // if(mobB.paused && l > 0 && a == 1){
+                            //   l = 0;
+                            //   setTimeout(function () {
+                            //     mobB.play();
+                            //   }, 800);
+                            // };
+
                         }
                     }
                 }
@@ -91,6 +182,8 @@ function(navigation, updateVideoLink, galleryNavigation, paginationNav, pillarHo
 
     }
     function handleSwipe(direction) {
+      var vid = document.querySelector('.video-frame');
+
         if (direction === "up") {
             navigation.goNext();
         }

@@ -6,10 +6,10 @@ body.portfolio {
     background-size: 100%;
     margin-top: -20px;
 }
-
 .video-content-desktop {
   position: relative;
-  width: 87%;
+  width: 100%;
+  left: -10%;
 }
 .mobile-li{
   display: none;
@@ -17,60 +17,123 @@ body.portfolio {
 .mail-icon{
   display: none;
 }
-
+.vertical-text-container {
+    width: 100%;
+    position: relative;
+    top: 4%;
+}
+.vertical-text {
+  font-size: 15px;
+  position: absolute;
+  color: white;
+  transform: rotate(-90deg);
+  top: 15%;
+  left: -10%;
+}
 .mobile-nav-content{
   display:none;
   position: absolute;
   z-index: 11;
   top: 0%;
-  height: 1000px;
+  height: 1100px;
   width: 100%;
   left: 0%;
   background-color: #223B90;
 }
 .mobile-content-center{
   position: absolute;
-  top: 15%;
+  top: 11%;
   width: 100%;
 }
 .mobile-column{
   width: 100%;
-
   color: white;
-  background-color: #315590;
+  /*background-color: #315590;*/
+  background: rgba(23,59,127,1);
   margin-top: 5px;
 }
 .mobile-button{
-  padding: 28px;
+  padding: 31px 30px 25px 30px;
   font-size: 26px;
 }
-.mobile-button-content-1, .mobile-button-content-2, .mobile-button-content-3, .mobile-button-content-4{
-  display: none;
-  font-size: 16px;
-  padding: 10px 15px;
+.mobile-button-content-1, .mobile-button-content-2, .mobile-button-content-3, .mobile-button-content-4 {
+    display: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    opacity: 0.25;
 }
-
+.mobile-button-content-1:hover, .mobile-button-content-2:hover, .mobile-button-content-3:hover, .mobile-button-content-4:hover{
+  opacity: 1;
+  /*background-image: url(../image/active-dot.png);*/
+  background-repeat: no-repeat;
+}
+.mob-column-headline{
+  font-size: 20px;
+}
+.active-nav{
+  opacity: 1;
+}
+.contact-btn-mobile{
+  top: 47%;
+  position: absolute;
+  left: 29%;
+}
+.social-btn-mobile{
+  position: relative;
+  left: -18%;
+  padding-bottom: 40px;
+}
 .mobile-button a {
     color: black;
-    padding: 12px 16px;
+    /*padding: 12px 16px;*/
     text-decoration: none;
     display: block;
+    color: white;
 }
 .mobile-button-right{
   text-align: right;
   font-size: 23px;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 .mob-nav-close{
   display: none;
   font-size: 30px;
   color: white;
   position: absolute;
-  left: 86%;
+  left: 89%;
+  top: 64%;
 }
 .Eko-spark-video-content{
   position: relative;
   top: 17%;
+  width: 120%;
+  left: -20%;
+}
+.nav-desktop-active{
+  opacity: 1 !important;
+  margin-left: -1px;
+  margin-top: 0px;
+}
+.active-dot{
+    display: none;
+    margin-left: -20px;
+    position: absolute;
+    margin-top: -3px;
+    opacity: 1 !important;
+    transition: all 0.82s;
+    transition-property: all;
+    transition-duration: 0.82s;
+    transition-timing-function: initial;
+    transition-delay: 0.12s;
+    -webkit-transition-delay: 0.12s;
+    -moz-transition-delay: 0.12s;
+    -o-transition-delay: 0.12s;
+    transition-delay: 0.12s;
+}
+.active-dot-mob {
+    margin-left: -20px;
+    position: absolute;
+    margin-top: -1px;
 }
 /*.nav-container {
     display: block;
@@ -81,23 +144,55 @@ body.portfolio {
   display: none;
 }
 .contact-button{
-  padding: 8px;
+      padding-top: 7px;
+      color: white;
+      font-size: 13px;
 }
+.contact-button:hover{
+  color: black;
+}
+.eko-btn.eko-btn-border.color-white:hover {
+
+    color: #black;
+
+}
+.ekocom-header-nav {
+    order: 1;
+    margin-right: -26px;
+}
+/*.mail-img{
+  display: none;
+}*/
+
+
 
 @media (max-width: 720px) {
 
 
+  .eko-btn {
+    color: #fff;
+    width: 158px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.30);
+    /* border-radius: 2em; */
+    height: 49px;
+    /* font-size: 1.7vmin; */
+    background-image: url(../image/download.svg);
+    background-repeat: no-repeat;
+    background-position: -9% -25%;
+    font-size: 14px;
+}
     .burger-icon{
       display: block;
       position: absolute;
-      left: 86%;
+      left: 88%;
       top: 37%;
     }
     .mail-icon{
       display: block;
       position: absolute;
       left: 73%;
-      top: 32%;
+      top: 36%;
     }
     .ekocom-header-content{
       display: none;
@@ -115,6 +210,7 @@ body.portfolio {
       display: none;
     }
     .slick-nav-words{
+      margin-bottom: -30px;
       display: flex;
         -webkit-flex-direction: row;
         flex-direction: row;
@@ -222,8 +318,8 @@ body.portfolio {
 .video-double-top {
     margin: 0 auto;
     /*border: solid 1px yellow;*/
-    padding: 85px 0 10px 0;
-    width: 65%;
+    padding: 75px 0 10px 0;
+    width: 55%;
 }
 
 .video-double-top p {
@@ -395,6 +491,17 @@ img.closeVidBtn {
     left: -18%;
 }
 
+.portfolio-carousel-desktop-bg {
+    position: absolute;
+    bottom: 0;
+    padding: 25px 0 0 0;
+    height: 250px;
+    width: 123%;
+    background-color: rgba(45,26,75,0.2);
+    left: 100%;
+}
+
+
 .portfolio-carousel-desktop p {
     margin-bottom: 30px;
     margin-left: 15.5vw;
@@ -489,7 +596,7 @@ img.closeVidBtn {
 .portfolio-carousel-mobile .slick-carousel-mobile div img.vidThumb {
     width: 100%;
     margin-bottom: 15px;
-    opacity: 0.5;
+    opacity: 0.3;
     transition: all 0.3s;
 }
 
@@ -529,6 +636,7 @@ img.closeVidBtn {
     height: 57px;
     background-color: #FFAC19;
     box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3);
+    left: 88%;
 }
 
 .portfolio-carousel-scroll-left, .portfolio-carousel-scroll-right {
@@ -570,6 +678,14 @@ img.closeVidBtn {
 .desktop{
   display: block;
 }
+.swipe-icon{
+  display:none;
+}
+.mobile-button-content-1:hover, .mobile-button-content-2:hover, .mobile-button-content-3:hover, .mobile-button-content-4:hover {
+
+    opacity: 1;
+}
+
 /*@media (max-width:720px) {
     .ekocom-content-horizontal { display: none; }
     .ekocom-content-vertical { display: block; }
@@ -577,20 +693,222 @@ img.closeVidBtn {
 }*/
 
 @media (max-width:720px) {
-  .desktop{
+    .desktop{
+      display: none;
+    }
+    a:hover{
+        opacity: 1;
+    }
+    .ekocom-content-vertical-row{
+        display: block;
+    }
+    .mobile{
+      display: block;
+      position: relative;
+    }
+    .mobile-title{
+      margin-left: -8%;
+    }
+    .mobile-description{
+      position: relative;
+      left: -2%;
+      top: -2%;
+    }
+    .branded-description {
+      position: absolute;
+      top: 35%;
+      left: 6%;
+      width: 84%;
+      font-size: 18pt;
+      line-height: 26pt;
+  }
+  .vertical-text-container {
     display: none;
   }
-  .ekocom-content-vertical-row{
-      display: block;
+  .vertical-text {
+    display: none;
   }
-  .mobile{
+  img.vidThumb {
+    opacity: 0;
+  }
+  .mail-img{
+    /*width: 0%!important;*/
+  }
+  .active-nav {
+      opacity: 1;
+      padding-left: 0px;
+      padding-top: 5px;
+  }
+  .active-dot{
+      margin-left: -2px;
+  }
+  .team{
+    margin-left: 13px;
+  }
+  .active-dot {
+      margin-left: -19px;
+      position: absolute;
+  }
+  .swipe-icon{
+    left: 48%;
     display: block;
+    position: absolute;
+    top: 77%;
+  }
+  .mobile-button a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      color: white;
+  }
+  .team-a{
+    margin-left: 15px;
+    margin-bottom: -15px;
+    margin-top: -14px;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1120px){
+    .mobile{
+      display: none;
+    }
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding-right: 66px;
+      font-size: 10px;
+      border: none;
+      cursor: pointer;
+      font-family: montserrat;
+  }
+  .nav-desktop{
+    font-size: 10px;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 5px 8px;
+      text-decoration: none;
+      display: block;
+      font-size: 10px;
+      opacity: 0.8;
+      font-family: Montserrat;
+      transition: all 0.82s;
+      transition-property: all;
+      transition-duration: 0.82s;
+      transition-timing-function: initial;
+      transition-delay: 0.12s;
+      -webkit-transition-delay: 0.12s;
+      -moz-transition-delay: 0.12s;
+      -o-transition-delay: 0.12s;
+      transition-delay: 0.12s;
+  }
+  .vertical-text-container {
+    /*display: none;*/
+  }
+  .vertical-text {
+    margin-left: 27px
+  }
+
+  .nav-container, .header-cta-container{
+    display: none;
+  }
+  .ekocom-header .ekocom-header-burger {
+    width: 32px;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    left: 90%;
+    position: absolute;
+}
+.ekocom-header .ekocom-header-burger div {
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-left: auto;
+    vertical-align: middle;
+    width: 66%;
+    margin-bottom: 4px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.burger-icon{
+  display: block;
+}
+.mail-icon {
+    display: block;
+    position: absolute;
+    left: 85%;
+    top: 22%;
+}
+.mail-img{
+  width: 100%;
+  margin-top:5px;
+}
+.mail-img-tablet{
+  display: block;
+}
+.mail-img-mobile{
+  /*display: block;*/
+}
+.video-double-top {
+    margin: 0 auto;
+    /* border: solid 1px yellow; */
+    padding: 85px 0 10px 0;
+    width: 55%;
+    margin-top: -40px;
+}
+.mobile-content-center {
+    position: absolute;
+    top: 11%;
+    width: 70%;
+    left: 15%;
+}
+.contact-btn-mobile {
+    top: 51%;
+    position: absolute;
+    left: 40%;
+}
+.social-btn-mobile {
     position: relative;
-  }
-  .mobile-title{
-    margin-left: -8%;
-  }
-  .mobile-description{
-    left: 5%;
-  }
+    left: -13%;
+    padding-bottom: 40px;
+}
+.active-nav {
+    opacity: 1;
+    padding-left: 0px;
+    padding-top: 5px;
+}
+.active-dot{
+    margin-left: -2px;
+}
+.team{
+  margin-left: 13px;
+}
+.active-dot {
+    margin-left: -19px;
+    position: absolute;
+}
+.mob-icon {
+    padding-left: 41px;
+}
+
+.mouse-icon {
+    margin-top: 60px;
+}
+.ekocom-content-horizontal-column-left-row {
+    width: 100%;
+    height: 100%;
+    margin-left: 22px;
+}
+.portfolio-carousel-scroll-sparks, .portfolio-carousel-scroll-branded {
+
+    left: 73%;
+}
+.portfolio-carousel-desktop {
+    left: -8%;
+}
+.swipe-icon{
+  display: none;
+}
+
 }

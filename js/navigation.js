@@ -12,13 +12,12 @@ define(['js/paginationNav'], function(paginationNav) {
     }
 
     function goNext() {
-    if ( $('.desktop:visible').css('display') == 'block' ){
-      var ekocomSections = 3;
-    }
-    if ( $('.mobile:visible').css('display') == 'block' ){
-      var ekocomSections = 5;
-    }
-
+        if ( $('.desktop:visible').css('display') == 'block' ){
+          var ekocomSections = 3;
+        }
+        if ( $('.mobile:visible').css('display') == 'block' ){
+          var ekocomSections = 5;
+        }
         if (isChanging || currentIndex == ekocomSections - 1 ) return;
         isChanging = true;
         currentIndex++;
@@ -111,6 +110,7 @@ define(['js/paginationNav'], function(paginationNav) {
 
     function updateNavigationArrows() {
         if(currentIndex == 0){
+
           document.getElementById('cms-nav-arrow-prev').classList.add('zeroOpacity');
           document.getElementById('cms-nav-arrow-next').classList.remove('zeroOpacity');
         } else if(currentIndex == 24){
