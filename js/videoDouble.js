@@ -107,27 +107,6 @@ $( document ).ready(function() {
 
 
 
-	$('.portfolio-carousel-mobile').on('swipe', function(event, slick, afterChange){
-		// $(this).hide()
-					// alert('this is 1')
-
-	});
-
-$('.portfolio-carousel-mobile').on('afterChange', function(event, slick, currentSlide){
-    // $('.slick-active p').removeClass('hidden');
-		$('.slick-active p').removeClass('hidden');
-
-});
-
-$('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, currentSlide){
-    // $('.slick-active p').addClass('hidden');
-
-});
-
-
-
-
-
 	$('video').on("ended", function() {
     closeVideo( $(this).parent() );
 	});
@@ -148,9 +127,6 @@ $('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, curren
 		$('#one-slide, #three-slide, #four-slide, #five-slide').removeClass('li-active')
 		$('#two-slide').addClass('li-active')
 	});
-
-
-
 
 	  if ( $('.mobile-li:visible').css('display') == 'block' ){
 			$('#one-slide-mobile').click(function (e) {
@@ -203,251 +179,171 @@ $('.portfolio-carousel-mobile').on('beforeChange', function(event, slick, curren
 			});
 
  		 }
-
-
-	//Firefox
-	//  $('#body').bind('DOMMouseScroll', function(e){
-	//      if(e.originalEvent.detail > 0) {
-	 //
-	// 			$('.one').show()
-	// 		 $('.two').hide()
-	// 		 $('#two-slide').removeClass('li-active')
-	// 		 $('#one-slide').addClass('li-active')
-	//      }else {
-	// 			 $('.one').hide()
- // 				$('.two').show()
- // 			// 	$('#one-slide').removeClass('li-active')
- // 			// 	$('#two-slide').addClass('li-active')
-	 //
-	//      }
-	 //
-	//      //prevent page fom scrolling
-	//      return false;
-	//  });
-
-
-
-	 //IE, Opera, Safari
-
-
-
-
-
-
-
-
-
-
-
-
-
-		//  var iScrollPos = 0;
-		 //
-		//  $(window).scroll(function () {
-		//      var iCurScrollPos = $(this).scrollTop();
-		 //
-		//      if (iCurScrollPos > iScrollPos) {
-		// 			$('.one').hide()
-		// 			$('.two').show()
-		// 			$('#one-slide').removeClass('li-active');
- 	// 				$('#two-slide').addClass('li-active')
-		//      } else {
-		// 			$('.one').show()
- 	// 				$('.two').hide()
-		// 			$('#two-slide').removeClass('li-active');
-		// 			$('#one-slide').addClass('li-active')
-		//      }
-		//      iScrollPos = iCurScrollPos;
-		//  });
-
-
-
-	//
-	//  			 //backup
-	//  $('#body').bind('mousewheel', function(e){
-	// 	 if(e.originalEvent.wheelDelta < 0) {
-	// 	 // Down
-	// 			$('#title').removeClass('animated fadeOutUp')
-	// 			$('#title').addClass('animated fadeOutUp')
-	// 			$('#sub-title').addClass('animated fadeInUp')
-	// 			 $('.one').hide( 500, function() {
-	// 				 $('.two').show(100, function() {
-	// 				 })
-	// 			 })
-	// 		 //
-	// 		 $('#one-slide').removeClass('li-active');
-	// 		 $('#two-slide').addClass('li-active')
-	//
-	//
-	// 		 if ($('#one-slide').hasClass('li-active')){
-	// 			 $('#one-slide').removeClass('li-active');
-	// 			 $('#two-slide').addClass('li-active')
-	// 		 }
-	//
-	//
-	// 		 if ( $('.mobile-li:visible').css('display') == 'block' ){
-	// 			 if ($('.li-active').attr('value') == 0){
-	// 				 $('#one-slide').removeClass('li-active')
-	// 					 $('#two-slide').addClass('li-active')
-	// 			 }
-	// 			 else if ($('.li-active').attr('value') == 1){
-	// 				 // $('#two-slide').removeClass('li-active')
-	// 				 $('#two-slide').addClass('li-active')
-	//
-	// 			 }
-	// 			 else if ($('.li-active').attr('value') == 2){
-	// 				 // $('#two-slide').removeClass('li-active')
-	// 				 $('#three-slide').addClass('li-active')
-	//
-	// 			 }
-	// 		 }
-	//
-	// 		}else{
-	// 		 // UP
-	// 					// desktop version
-	// 					$('#title-sparks').removeClass('animated fadeInUp')
-	// 					$('#title-sparks').addClass('animated fadeInUp')
-	// 					$('#sub-title-sparks').addClass('animated fadeInUp')
-	//
-	// 				 $('#title').removeClass('animated fadeOutUp')
-	// 				 $('#title').addClass('animated fadeInUp')
-	// 				 $('#sub-title').addClass('animated fadeInUp')
-	//
-	// 				 $('.two').hide(500, function() {
-	// 				 $('.one').show(100, function() {
-	// 				 })
-	// 			 })
-	// 			 $('#two-slide').removeClass('li-active')
-	// 			 $('#one-slide').addClass('li-active')
-	// 			}
-	//
-	// 	 //  if ( $('.mobile-li:visible').css('display') == 'block' ){
-	// 	 // 	 if ($('.li-active').attr('value') == 0){
-	// 		//
-	// 	 // 	 }
-	// 	 // 	 if ($('.li-active').attr('value') == 1){
-	// 		//
-	// 	 // 	 }
-	// 	 // 	 if ($('.li-active').attr('value') == 2){
-	// 	 // 		 $('#two-slide').removeClass('li-active')
-	// 	 // 		 $('#three-slide').addClass('li-active')
-	// 		//
-	// 	 // 	 }
-	// 	 // 	 if ($('.li-active').attr('value') == 3){
-	// 		//
-	// 	 // 	 }
-	// 	 // 	 if ($('.li-active').attr('value') == 4){
-	// 		//
-	// 	 // 	 }
-	// 	 // 	 if ($('.li-active').attr('value') == 5){
-	// 		//
-	// 	 // 	 }
-	// 	 //  }
-	//
-	//
-	// 		//prevent page fom scrolling
-	// 		return false;
-	// });
-
 		$(".nav-background").mouseover(function () {
-						$(".dropdown-content").show();
-						$('.nav-container-background').css({'background-color': '#223B90'});
-						$('.ekocom-header .ekocom-header-nav a').css({'color': 'white'});
-						$('.contact-buton').css({'color': 'black'});
+				$(".dropdown-content").show();
+				$('.nav-container-background').css({'background-color': '#223B90'});
+				$('.ekocom-header .ekocom-header-nav a').css({'color': 'white'});
+				$('.contact-buton').css({'color': 'black'});
 
-						setTimeout(function(){
-							$(".active-dot").show();
-						}, 200);
-						// $('.active-nav').css({'background-image': 'url(../image/active-dot.png)'});
-						if ( $('.burger-icon:visible').css('display') == 'block' ){
-						 //  $('.nav-container-background').css({'background-color': 'transparent', 'height': '0%'});
-							$('.nav-container-background').css({'background-color': 'transparent'});
-						 //  $('.mobile-nav-content').hide();
-						 //  $(".ekocom-logo-container").css('opacity', '1');
-						}
-				 }).mouseout(function () {
-						 $('.nav-container-background').css({'background-color': 'transparent'});
+				setTimeout(function(){
+					$(".active-dot").show();
+				}, 200);
+				if ( $('.burger-icon:visible').css('display') == 'block' ){
+					$('.nav-container-background').css({'background-color': 'transparent'});
+				}
+		 }).mouseout(function () {
+				 $('.nav-container-background').css({'background-color': 'transparent'});
 
-						 $('.ekocom-header .ekocom-header-nav a').css({'color': 'transparent'});
-						 $('.active-nav').css({'background-image': 'none'});
-						 setTimeout(function(){
-						 $(".active-dot").hide();
-						 }, 200);
-						$('.nav-about').removeClass('active-nav').delay(3000);
-						 $('.contact-buton').css({'color': 'black'});
-						 if ( $('.burger-icon:visible').css('display') == 'block' ){
-							//  $('.nav-container-background').css({'background-color': 'transparent', 'height': '0%'});
-							 $('.nav-container-background').css({'background-color': 'transparent'});
-							//  $('.mobile-nav-content').hide();
-							//  $(".ekocom-logo-container").css('opacity', '1');
-						 }
+				 $('.ekocom-header .ekocom-header-nav a').css({'color': 'transparent'});
+				 $('.active-nav').css({'background-image': 'none'});
+				 setTimeout(function(){
+				 $(".active-dot").hide();
+				 }, 200);
+				$('.nav-about').removeClass('active-nav').delay(3000);
+				 $('.contact-buton').css({'color': 'black'});
+				 if ( $('.burger-icon:visible').css('display') == 'block' ){
+					 $('.nav-container-background').css({'background-color': 'transparent'});
+				 }
+		 });
+
+		 if ( $('.burger-icon:visible').css('display') == 'block' ){
+			 $('.burger-icon').click(function (e) {
+				 e.preventDefault();
+				 $('.mob-nav-close').show();
+				 $('.mobile-nav-content').show();
+				 $('.nav-container-background-active').show();
+				 $(".ekocom-logo-container").hide();
+				 $('.nav-container-background').css({'opacity': '0'});
+				 $(".ekocom-slide-pagination").hide();
+			 });
+			 $('.mob-nav-close').click(function () {
+				$('.mobile-nav-content').hide();
+				$('.nav-container-background-active').show();
+				$(".ekocom-logo-container").show();
+				$(".ekocom-slide-pagination").show();
+				$('.mob-nav-close').hide();
+			 });
+
+			 $('.mob-4').click(function (e) {
+				 e.preventDefault();
+				$('.mobile-button-content-4').toggle();
+					if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+						 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible').hide();
+					} else {
+						$('.contact-btn-mobile').show();
+					}
 				 });
 
-				 if ( $('.burger-icon:visible').css('display') == 'block' ){
-					 $('.burger-icon').click(function (e) {
-						 e.preventDefault();
-						 $('.mobile-nav-content').show();
-						 $('.nav-container-background-active').show();
-						 $(".ekocom-logo-container").hide();
-						 $('.mob-nav-close').show();
-						 $('.nav-container-background').css({'opacity': '0'});
-						 $(".ekocom-slide-pagination").hide();
-					 });
-					 $('.mob-nav-close').click(function () {
+			 $('.mob-3').click(function (e) {
+				 e.preventDefault();
+				$('.mobile-button-content-3').toggle();
+					if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+						 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-4:visible').hide();
+					}else {
+						$('.contact-btn-mobile').show();
+					}
+			 });
+			 $('.mob-2').click(function (e) {
+				 e.preventDefault();
+				$('.mobile-button-content-2').toggle();
+					if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+						 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
+					}else {
+						$('.contact-btn-mobile').show();
+					}
+			 });
 
-						$('.mobile-nav-content').hide();
-						$('.nav-container-background-active').show();
-						$(".ekocom-logo-container").show();
-						$(".ekocom-slide-pagination").show();
-						$('.mob-nav-close').fadeOut();
+			 $('.mob-1').click(function (e) {
+				 e.preventDefault();
+				$('.mobile-button-content-1').toggle();
+					if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
+						 $('.contact-btn-mobile, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
+					}else {
+						$('.contact-btn-mobile').show();
+					}
+			 });
+			 $('.about').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/");
+			 });
+			 $('.history').click(function (e) {
+				 e.preventDefault();
+					window.location.href =("https://company.helloeko.com/choice-moments");
+			 });
+			 $('.team-link').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/our-team");
+			 });
+			 $('.blog').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://blog.helloeko.com/");
+			 });
+			 $('.press').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/media/press-releases");
+			 });
+			 $('.jobs').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/careers");
+			 });
 
-					 });
+			 //stories links
+			 $('.broken').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://helloeko.com/stories");
+			 });
+			 $('.possibilia').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://helloeko.com/stories#pro_hloizr");
+			 });
+			 $('.oneOnone').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://helloeko.com/stories#pro_9olx9y");
+			 });
+			 $('.more').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://helloeko.com/stories");
+			 });
+			 //brands links
+			 $('.orginal').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/brands#orginalcontent");
+			 });
 
-					 $('.mob-4').click(function (e) {
-						 e.preventDefault();
-						$('.mobile-button-content-4').toggle();
-							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
-								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible').hide();
+			 $('.sparks').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/brands#sparks");
+			 });
 
-							}else {
-								$('.contact-btn-mobile').show();
-							}
-						 });
+			 $('.continued').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/brands#sparkscontinued");
+			 });
 
-					 $('.mob-3').click(function (e) {
-						 e.preventDefault();
-						$('.mobile-button-content-3').toggle();
-							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
-								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-4:visible').hide();
+			 $('.content').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/brands#content");
+			 });
 
-							}else {
-								$('.contact-btn-mobile').show();
-							}
-					 });
-					 $('.mob-2').click(function (e) {
-						 e.preventDefault();
-						$('.mobile-button-content-2').toggle();
-							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
-								 $('.contact-btn-mobile, .mobile-button-content-1:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
+			 $('.partners').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://company.helloeko.com/brands#partners");
+			 });
 
-							}else {
-								$('.contact-btn-mobile').show();
-							}
-					 });
+			 //mobile nav links
+			 $('.developers').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://developer.helloeko.com/");
+			 });
 
-					 $('.mob-1').click(function (e) {
-						 e.preventDefault();
-						$('.mobile-button-content-1').toggle();
-							if ( $('.mobile-button-content-1:visible, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').css('display') == 'block' ){
-								 $('.contact-btn-mobile, .mobile-button-content-2:visible, .mobile-button-content-3:visible, .mobile-button-content-4:visible').hide();
-							}else {
-								$('.contact-btn-mobile').show();
-							}
-					 });
+			 $('.creative').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://studio.helloeko.com/guides");
+			 });
 
-
-				 	}
-
-
-
+			 $('.studio').click(function (e) {
+				 e.preventDefault();
+					window.location.href = ("https://studio.helloeko.com/");
+			 });
+		 	}
 });

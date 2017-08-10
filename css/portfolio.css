@@ -135,11 +135,6 @@ body.portfolio {
     position: absolute;
     margin-top: -1px;
 }
-/*.nav-container {
-    display: block;
-    left: 78%;
-    position: relative;
-}*/
 .mobile{
   display: none;
 }
@@ -171,7 +166,7 @@ body.portfolio {
 }*/
 
 .contactBtn{
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 @media (max-width: 720px) {
@@ -180,7 +175,11 @@ body.portfolio {
     order: 2;
     cursor: pointer;
 }
-
+  .nav-a{
+    position: relative;
+    z-index: 10;
+    color: yellow !important;
+  }
 
   .eko-btn {
     color: #fff;
@@ -239,10 +238,6 @@ body.portfolio {
     .nav-words-active{
       padding-left: 25px;
     }
-    /*.mobile-two .mobile-three .mobile-four .mobile-five{
-      display: none;
-    }*/
-
 
     .ekocom-section-title {
         margin-top: 50px;
