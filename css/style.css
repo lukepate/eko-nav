@@ -1,0 +1,473 @@
+
+body{
+		background-color: #00CCFF;
+		overflow: hidden;
+}
+
+ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 20px 80px 30px 80px;
+	  overflow: hidden;
+	  height: 250px;
+	  margin-top: -10px;
+	  margin-left: -10px;
+	  width: 90%;
+}
+
+ul:hover{
+		background-image: linear-gradient(180deg, rgba(40,95,163,1) 0%, rgba(70,68,130,1) 100%);
+}
+
+li {
+    float: left;
+    list-style-type: none;
+		margin-top: 20px;
+}
+
+/* DROPDOWN CONTENT STYLING */
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 6px 16px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
+
+a.desktop-link {
+    opacity: 0.55;
+}
+
+.dropdown-content a:hover {
+		background-color: transparent;
+		opacity: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*EKO LOGO */
+.ekocom-logo-btn{
+		width:13vmin;
+		display:inline-block;
+		margin-left:-5px;
+		margin-right:50px;
+		max-height:35px
+}
+
+.ekocom-logo-btn svg{
+		fill:#fff;
+		height:100%;
+		max-height:35px;
+		max-width:80px
+}
+
+.ekocom-logo-btn a{
+		display:block
+}
+
+.ekocom-nav-li{
+		float: right;
+		padding: 0px 50px 0px 0px;
+}
+
+/* Contact button */
+.contact-btn{
+    border: 1px solid white;
+    float: right;
+    width: 130px;
+    height: 34px;
+    padding: 0px 10px 0px 30px;
+		text-transform: uppercase;
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+		transition: all 0.82s;
+		transition-property: all;
+		transition-duration: 0.82s;
+		transition-timing-function: initial;
+		transition-delay: 0.12s;
+		-webkit-transition-delay: 0.12s;
+		-moz-transition-delay: 0.12s;
+		-o-transition-delay: 0.12s;
+		transition-delay: 0.12s;
+		margin-top: 16px;
+}
+
+.contact-btn a{
+		font-size: 16px;
+  	margin-left: -61px;
+  	width: 200px;
+		margin-top: 1px;
+}
+.contact-btn:hover{
+		background-color: white;
+		color: black;
+		transform:scale(1.1)
+}
+.contact-btn a:hover{
+		color: black;
+}
+
+/* ACTIVE DOT*/
+.active-dot{
+		margin-left: -19px;
+}
+.active-dot-image{
+		position: absolute;
+}
+.active-text{
+		margin-left: 20px;
+}
+
+/* HIDDEN ELEMENTS FROM MOBILE/TABLET */
+.mail-img, .mob-nav-container{
+		display: none;
+}
+
+
+/* TABLET VIEW */
+@media screen and (min-width: 721px) and (max-width: 1150px){
+	ul:hover {
+	    background-image: none;
+	}
+	li.dropdown {
+    	display: none;
+	}
+
+	/*TABLET BURGER ICON*/
+	.ekocom-header-burger {
+			position: relative;
+	    width: 20px;
+	    display: block;
+	    top: 0%;
+			margin-top: 51px;
+	    left: 88%;
+	    position: absolute;
+	}
+
+	.ekocom-header-burger div {
+			height: 2px;
+			background: #fff;
+			display: block;
+			margin-left: auto;
+			vertical-align: middle;
+			width: 100%;
+			margin-bottom: 4px;
+	}
+
+	/* MOBILE NAV CONTENT*/
+	.mob-nav-close{
+			display: block;
+    	font-size: 30px;
+    	color: white;
+    	position: absolute;
+    	left: 80%;
+    	top: 6%;
+    	z-index: 10;
+	}
+	.mob-nav-container{
+			display:none;
+			background-color: #223B90;
+			background-image: linear-gradient(180deg, rgba(40,95,163,1) 0%, rgba(70,68,130,1) 100%);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	    height: 100%;
+	    position: fixed;
+	    width: 100%;
+	    left: 0%;
+	    top: 0%;
+	}
+
+	.mob-column-container{
+			position: absolute;
+	    top: 16%;
+			left: -14%;
+	    width: 100%;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+
+	}
+
+	.mob-column-headline{
+			font-size: 20px;
+			font-family: 'Montserrat', sans-serif;
+			padding-left: 30px;
+	}
+
+	.mob-column {
+	    width: 100%;
+	    color: white;
+	   	background: rgba(0,0,0,.1);
+	    margin-top: 5px;
+	    padding: 10px 0px 10px 0px;
+	    font-size: 26px;
+	    max-width: 600px;
+	    position: relative;
+	    left: 14%;
+	}
+
+	.column-one-content, .column-two-content, .column-three-content, .column-four-content{
+			display: none;
+			position: relative;
+			z-index: 12;
+			margin-top: -14px;
+			padding-bottom: 20px;
+	}
+
+	.mob-link{
+			display: block;
+			text-decoration: none;
+	    color: white;
+	    font-size: 13px;
+	    opacity: 0.5;
+		  padding: 15px 0px 0px 48px;
+			font-family: 'Montserrat', sans-serif;
+			width: 150px;
+	}
+
+	/* MOBILE CONTACT BUTTON AND SOCIAL */
+	.contact-btn-mobile {
+	    position: absolute;
+	    left: 57%;
+	    top: 122%;
+	}
+
+	.contact-btn{
+			position: relative;
+			left: -16%;
+			top: 1%;
+	    border: 1px solid white;
+	    float: right;
+	    width: 130px;
+	    height: 34px;
+	    padding: 0px 10px 0px 30px;
+	}
+
+	.social-btn-mobile {
+    	position: relative;
+			margin-left: 8px;
+	}
+
+	.mob-icon {
+    	padding-left: 11px;
+	}
+
+	.contact-button-mobile{
+			text-decoration: none;
+			background: transparent;
+			color: #fff;
+			border: 1px solid #fff;
+	    padding: 8px 35px 8px 35px;
+			font-family: 'Montserrat', sans-serif;
+	}
+
+	.down-arrow{
+			float: right;
+			padding-top: 9px;
+			padding-right: 28px;
+	}
+
+	/* HIDDEN ELEMENTS */
+	.mail-img{
+			display: none;
+	}
+}
+
+/* MOBILE VIEW */
+@media (max-width:720px){
+	body, header {
+			overflow: hidden;
+	}
+
+	ul:hover {
+	    background-image: none;
+	}
+
+	/* Top Nav Icons*/
+	.ekocom-logo-btn {
+			width: 13vmin;
+	    display: inline-block;
+	    margin-left: -25px;
+	    margin-right: 50px;
+	    max-height: 35px;
+			margin-top: 3px;
+	}
+
+	.ekocom-logo-container{
+			display: -webkit-flex;
+			display: flex;
+		  -webkit-flex-direction: row;
+		  flex-direction: row;
+	}
+
+	.ekocom-logo-btn {
+   		width:14vmin;
+	}
+
+	.ekocom-header-burger {
+   		width:20px;
+   		display: block;
+   		top: 6%;
+    	left: 83%;
+   	 	position: absolute;
+	}
+
+	.ekocom-header-burger div {
+	    height: 2px;
+	    background: #fff;
+	    display: block;
+	    margin-left: auto;
+	    vertical-align: middle;
+	    width: 100%;
+	    margin-bottom: 4px;
+	}
+
+	.mail-icon{
+			position: absolute;
+			top: 5%;
+			left: 67%;
+	}
+
+	.mail-img{
+			display: block;
+	}
+
+	/* MOBILE NAV CONTENT*/
+	.mob-nav-close{
+			display: block;
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			left: 89%;
+	    top: 4%;
+	    z-index: 10;
+	}
+
+	.mob-nav-container{
+			display:none;
+	    background-color: #223B90;
+   		background-image: linear-gradient(180deg, rgba(40,95,163,1) 0%, rgba(70,68,130,1) 100%);
+	    height: 110%;
+	    position: absolute;
+	    width: 100%;
+	    left: 0%;
+	    top: 0%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			overflow: hidden;
+	}
+
+	.mob-column-container{
+			position: absolute;
+	    top: 16%;
+	    width: 100%;
+	}
+
+	 .mob-column-headline{
+			font-size: 20px;
+			font-family: 'Montserrat', sans-serif;
+			padding-left: 30px;
+	}
+
+	.mob-column{
+			width: 100%;
+	    color: white;
+	    background: rgba(0,0,0,.1);
+	    margin-top: 5px;
+	    padding: 10px 0px 10px 0px;
+    	font-size: 26px;
+	}
+
+	.column-one-content, .column-two-content, .column-three-content, .column-four-content{
+			display: none;
+			position: relative;
+			z-index: 12;
+			margin-top: -14px;
+			padding-bottom: 20px;
+	}
+
+	.mob-link{
+			display: block;
+			text-decoration: none;
+	    color: white;
+	    font-size: 14px;
+	    opacity: 0.5;
+		  padding: 15px 0px 0px 48px;
+			font-family: 'Montserrat', sans-serif;
+			width: 150px;
+	}
+
+	/* MOBILE CONTACT BUTTON AND SOCIAL ICONS */
+	.contact-btn-mobile{
+			position: absolute;
+			left: 31%;
+			top: 112%;
+	}
+
+	.social-btn-mobile {
+    	position: relative;
+	}
+
+	.mob-icon {
+    	padding-left: 11px;
+	}
+
+	.contact-button-mobile{
+			text-decoration: none;
+			background: transparent;
+			color: #fff;
+			border: 1px solid #fff;
+	    padding: 8px 35px 8px 35px;
+			font-family: 'Montserrat', sans-serif;
+	}
+
+	.contact-button{
+		text-decoration: none;
+	}
+
+	.down-arrow{
+		float: right;
+		padding-top: 9px;
+		padding-right: 28px;
+	}
+
+	/*HIDDEN ELEMENTS*/
+	li.dropdown, .contact-btn{
+			display: none;
+	}
+}

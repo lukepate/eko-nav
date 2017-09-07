@@ -1,260 +1,200 @@
 <!DOCTYPE html>
-<html lang="en" class="isDesktop video isLoggedOut">
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link rel="canonical" href="https://company.helloeko.com/extras">
-  <title>Eko</title>
+  <title>Navigation</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="shortcut icon" href="https://company.helloeko.com/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./Eko_files/about.css">
-  <link rel="stylesheet" type="text/css" href="./css/paginationNav.css">
-  <link rel="stylesheet" type="text/css" href="./Eko_files/header.css">
-  <link rel="stylesheet" type="text/css" href="./Eko_files/empty.css">
-  <link rel="stylesheet" type="text/css" href="./css/about.css">
-  <link rel="stylesheet" type="text/css" href="./css/new_css.css">
-  <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-<body  id="body" class="portfolio">
-  <header id="header-container">
-    <div class="nav-background">
-    <div data-reactroot="" class="ekocom-header">
-    <div class="ekocom-menuOverlay-container">
-      <div class="menuOverlay">
-        <div class="menuOverlay-header">
-          <div class="menuOverlay-close"></div>
-        </div>
-        <div class="menuOverlay-navigation">
-          <nav class="">
-            <a href="https://helloeko.com/stories/" target="_self">Stories</a>
-          </nav>
-          <nav class="">
-            <a href="https://company.helloeko.com/brands" target="_self">Brands</a>
-          </nav>
-          <nav class="">
-            <a href="https://studio.helloeko.com/" target="_self">Creators</a>
-          </nav>
-          <nav class="">
+<body>
+  <header>
+    <ul>
 
-          </nav>
-          <div class="social-menu overlay">
-            <div class="social-facebook">
-              <a href="https://www.facebook.com/helloeko" target="_blank">
-                <svg viewBox="0 0 512 512">
-                  <path d="M223.2,71.2c16.1-15.3,38.9-20.5,60.5-21.1c22.8-0.2,45.6-0.1,68.4-0.1c0.1,24.1,0.1,48.1,0,72.2c-14.7,0-29.5,0-44.2,0c-9.3-0.6-18.9,6.5-20.6,15.8c-0.2,16.1-0.1,32.2-0.1,48.3c21.6,0.1,43.2,0,64.8,0.1c-1.6,23.3-4.5,46.5-7.9,69.5c-19.1,0.2-38.2,0-57.3,0.1c-0.2,68.7,0.1,137.3-0.1,206c-28.4,0.1-56.7-0.1-85.1,0.1c-0.5-68.7,0-137.4-0.3-206.1c-13.8-0.1-27.7,0.1-41.5-0.1c0.1-23.1,0-46.2,0-69.2c13.8-0.2,27.7,0,41.5-0.1c0.4-22.4-0.4-44.9,0.4-67.3C203.2,101.4,209.9,83.5,223.2,71.2z"></path>
-                </svg>
-              </a>
+      <!-- LOGO ICON -->
+      <li class="ekocom-logo-btn">
+        <div class="ekocom-logo-btn">
+          <a href="https://helloeko.com/">
+            <svg viewBox="0 0 71 32">
+              <path d="M118.2,25l-8.331,0-6.91,10.924V16H95.883V47.469h6.189l4.5-6.271,4.5,6.271h9.054L110.75,35.374Zm10.975-.549A11.777,11.777,0,1,0,141,36.223,11.8,11.8,0,0,0,129.172,24.446Zm0,16.773a4.784,4.784,0,0,1-4.731-5,4.739,4.739,0,1,1,9.462,0A4.784,4.784,0,0,1,129.172,41.219ZM81.828,24.446A11.777,11.777,0,1,0,92.9,40.382H85.7c-0.741.876-1.7,1.5-3.812,1.5a4.856,4.856,0,0,1-4.807-3.438H93.445A11.778,11.778,0,0,0,81.828,24.446ZM77.082,34a5.017,5.017,0,0,1,9.491,0H77.082Z" transform="translate(-70 -16)"></path>
+            </svg>
+          </a>
+        </div>
+      </li>
+
+
+      <!-- MAIL ICON -->
+      <li>
+        <div class="ekocom-logo-btn">
+          <a class="mail-icon" href="https://company.helloeko.com/contact" target="_self">
+            <img class="mail-img" src="./css/mail.svg">
+          </a>
+        </div>
+      </li>
+
+      <!-- BURGER ICON -->
+      <li>
+        <div class="ekocom-header-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </li>
+
+      <!-- CONCTACT BUTTON -->
+      <li class="contact-btn">
+        <a href="javascript:void(0)" class="dropbtn">CONTACT US</a>
+      </li>
+
+      <!-- WEB DROPDOWN CONTENT -->
+      <li class="ekocom-nav-li dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Creators</a>
+        <div class="dropdown-content">
+          <a class="desktop-link" href="https://studio.helloeko.com/">Eko Studio</a>
+          <a class="desktop-link" href="https://studio.helloeko.com/guides">Creative Guidelines</a>
+          <a class="desktop-link" href="https://developer.helloeko.com/">Developers</a>
+        </div>
+      </li>
+
+      <li class="ekocom-nav-li dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Brands</a>
+        <div class="dropdown-content">
+          <a class="desktop-link" href="https://company.helloeko.com/brands#orginalcontent">Orginal Content</a>
+          <a class="desktop-link" href="https://company.helloeko.com/brands#sparks">Sparks</a>
+          <a class="desktop-link" href="https://company.helloeko.com/brands#sparkscontinued">Sparks Continued</a>
+          <a class="desktop-link" href="https://company.helloeko.com/brands#brandedcontent">Branded Content</a>
+          <a class="desktop-link" href="https://company.helloeko.com/brands#partners">Partners</a>
+        </div>
+      </li>
+
+      <li class="ekocom-nav-li dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Stories</a>
+        <div class="dropdown-content">
+          <a class="desktop-link" href="https://helloeko.com/stories">Broken Night VR</a>
+          <a class="desktop-link" href="https://helloeko.com/stories#pro_hloizr">Possibilia</a>
+          <a class="desktop-link" href="https://helloeko.com/stories#pro_9olx9y">One on One</a>
+          <a class="desktop-link" href="https://helloeko.com/stories">More</a>
+        </div>
+      </li>
+
+      <li class="ekocom-nav-li dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Company</a>
+        <div class="dropdown-content">
+          <!-- ACTIVE NAV STYLING  -->
+          <a class="active-dot" href="https://company.helloeko.com/">
+            <img class="active-dot-image" src="image/active-dot.png">
+            <span class="active-text">About<span>
+          </a>
+          <!-- ACTIVE NAV STYLING END -->
+          <a class="desktop-link" href="https://company.helloeko.com/choice-moments">History</a>
+          <a class="desktop-link" href="https://company.helloeko.com/our-team">Team</a>
+          <a class="desktop-link" href="#">News</a>
+          <a class="desktop-link" href="https://company.helloeko.com/media/press-releases">Press</a>
+          <a class="desktop-link" href="https://blog.helloeko.com/" class="nav-desktop">Blog</a>
+          <a class="desktop-link" href="https://company.helloeko.com/careers">Jobs</a>
+        </div>
+      </li>
+      <!-- WEB DROPDOWN CONTENT END-->
+    </ul>
+
+    <!-- MOBILE CONTENT START -->
+    <div class="mob-nav-container">
+      <!-- CLOSE ICON -->
+      <div class="mob-nav-close">
+        <img src="image/close.png">
+      </div>
+
+      <!-- MOBILE COLUMNS -->
+      <div class="mob-column-container">
+
+        <!-- COMPANY COLUMN -->
+        <div class="mob-column column-one">
+          <p class="mob-column-headline">Company
+            <img class="down-arrow arrow-one" src="image/down-arrow.png">
+          </p>
+
+          <div class="column-one-content">
+              <a class="mob-link" href="https://company.helloeko.com/">About</a>
+              <a class="mob-link" href="https://company.helloeko.com/choice-moments">History</a>
+            <div class="mobile-button-content-1 active-nav">
+              <!-- <span class="team"><img class="active-dot-mob"src="image/active-dot.png"> -->
+                <a class="mob-link"href="https://company.helloeko.com/our-team">Team</a>
+                <!-- </span> -->
             </div>
-            <div class="social-twitter">
-              <a href="https://twitter.com/ekovideo" target="_blank">
-                <svg viewBox="0 0 43.03 35.47">
-                  <path d="M38.631,8.836 C38.649,9.221 38.657,9.608 38.657,9.995 C38.657,21.833 29.772,35.483 13.527,35.483 C8.540,35.483 3.898,33.999 -0.011,31.457 C0.679,31.541 1.382,31.583 2.095,31.583 C6.234,31.583 10.042,30.151 13.065,27.747 C9.201,27.676 5.938,25.086 4.814,21.527 C5.354,21.631 5.907,21.689 6.476,21.689 C7.281,21.689 8.062,21.578 8.803,21.374 C4.763,20.550 1.718,16.930 1.718,12.590 C1.718,12.552 1.718,12.515 1.719,12.478 C2.909,13.149 4.272,13.551 5.719,13.599 C3.349,11.991 1.791,9.250 1.791,6.141 C1.791,4.500 2.225,2.962 2.986,1.639 C7.341,7.058 13.850,10.624 21.191,10.998 C21.039,10.342 20.962,9.659 20.962,8.956 C20.962,4.009 24.917,-0.001 29.794,-0.001 C32.334,-0.001 34.629,1.087 36.241,2.828 C38.253,2.426 40.144,1.681 41.850,0.654 C41.189,2.745 39.790,4.502 37.967,5.610 C39.753,5.394 41.456,4.912 43.039,4.200 C41.855,5.995 40.357,7.574 38.631,8.836 Z"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="social-linkedin">
-              <a href="https://www.linkedin.com/company/ekovideo" target="_blank">
-                <svg viewBox="0 0 510 510">
-                  <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0zM153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"></path>
-                </svg>
-              </a>
-            </div>
+
+              <a class="mob-link" href="https://blog.helloeko.com/">Blog</a>
+              <a class="mob-link" href="https://company.helloeko.com/media/press-releases">Press</a>
+              <a class="mob-link" href="https://company.helloeko.com/careers">Jobs</a>
+
           </div>
         </div>
 
-      </div>
-    </div>
-    <div class="ekocom-logo-container">
-      <div class="ekocom-logo-btn">
-        <a href="https://helloeko.com/">
-          <svg viewBox="0 0 71 32">
-            <path d="M118.2,25l-8.331,0-6.91,10.924V16H95.883V47.469h6.189l4.5-6.271,4.5,6.271h9.054L110.75,35.374Zm10.975-.549A11.777,11.777,0,1,0,141,36.223,11.8,11.8,0,0,0,129.172,24.446Zm0,16.773a4.784,4.784,0,0,1-4.731-5,4.739,4.739,0,1,1,9.462,0A4.784,4.784,0,0,1,129.172,41.219ZM81.828,24.446A11.777,11.777,0,1,0,92.9,40.382H85.7c-0.741.876-1.7,1.5-3.812,1.5a4.856,4.856,0,0,1-4.807-3.438H93.445A11.778,11.778,0,0,0,81.828,24.446ZM77.082,34a5.017,5.017,0,0,1,9.491,0H77.082Z" transform="translate(-70 -16)"></path>
-          </svg>
-        </a>
-    </div>
-    <a class="contactIcon mail-icon" href="https://company.helloeko.com/contact" target="_self">
-      <img class="mail-img" src="./Eko_files/mail.svg">
 
-    </a>
-    <div class="ekocom-header-burger burger-icon">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-    <div class="mob-nav-close"><img src="image/close.png"></div>
-    <div class="ekocom-header-content">
-      <div class="ekocom-header-nav">
-        <div class="nav-container">
-          <div class="dropdown">
-            <button class="dropbtn">Company</button>
-            <div class="dropdown-content active-nav">
-              <!-- <a href="https://company.helloeko.com/"class="nav-desktop"> About</a> -->
-              <a href="https://company.helloeko.com/" class="nav-desktop-active" href="#"><img class="active-dot"src="image/active-dot.png"> About</a>
-              <a href="https://company.helloeko.com/choice-moments" class="nav-desktop">History</a>
-              <a href="https://company.helloeko.com/our-team" class="nav-desktop">Team</a>
-              <a href="https://blog.helloeko.com/" class="nav-desktop">Blog</a>
-              <a href="https://company.helloeko.com/media/press-releases" class="nav-desktop">Press</a>
-              <a href="https://company.helloeko.com/careers" class="nav-desktop">Jobs</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Stories</button>
-            <div class="dropdown-content">
-              <a href="https://helloeko.com/stories" class="nav-desktop">Broken Night VR</a>
-              <a href="https://helloeko.com/stories#pro_hloizr" class="nav-desktop">Possibilia</a>
-              <a href="https://helloeko.com/stories#pro_9olx9y" class="nav-desktop">One on One</a>
-              <a href="https://helloeko.com/stories" class="nav-desktop">More</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a class="nav-headline" href="https://company.helloeko.com/brands"><button class="dropbtn">Brands</button></a>
-            <div class="dropdown-content">
-              <a href="https://company.helloeko.com/brands#orginalcontent" class="nav-desktop">Orginal Content</a>
-              <a href="https://company.helloeko.com/brands#sparks" class="nav-desktop">Sparks</a>
-              <a href="https://company.helloeko.com/brands#sparkscontinued" class="nav-desktop">Sparks Continued</a>
-              <a href="https://company.helloeko.com/brands#brandedcontent" class="nav-desktop">Branded Content</a>
-              <a href="https://company.helloeko.com/brands#partners" class="nav-desktop">Partners</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Creators</button>
-            <div class="dropdown-content">
-              <a href="https://studio.helloeko.com/" class="nav-desktop">Eko Studio</a>
-              <a href="https://studio.helloeko.com/guides" class="nav-desktop">Creative Guidelines</a>
-              <a href="https://developer.helloeko.com/" class="nav-desktop">Developers</a>
-            </div>
+        <div class="mob-column column-two">
+          <p class="mob-column-headline">Stories
+            <img class="down-arrow arrow-two" src="image/down-arrow.png">
+          </p>
+
+          <div class="column-two-content">
+            <a class="mob-link" href="https://helloeko.com/stories">Broken Night VR</a>
+            <a class="mob-link" href="https://helloeko.com/stories#pro_hloizr">Possibilia</a>
+            <a class="mob-link" href="https://helloeko.com/stories#pro_9olx9y">One on One</a>
+            <a class="mob-link" href="https://helloeko.com/stories">More...</a>
           </div>
         </div>
 
-      <div class="header-user-plus">
-      </div>
-      <div class="header-cta-container">
-        <a class="ekocom-header-cta eko-btn eko-btn-border color-white size-small contactBtn" href="https://company.helloeko.com/contact" target="_self">
-            <p class="contact-button">Contact Us</p>
-        </a>
-        <a class="contactIcon" href="https://company.helloeko.com/contact" target="_self">
-          <img src="./Eko_files/mail.svg">
-        </a>
-      </div>
-      <div id="header__user_indication" class="show"></div>
-    </div>
-  </div>
-</header>
+        <div class="mob-column column-three">
+          <p class="mob-column-headline">Brands
+            <img class="down-arrow arrow-three" src="image/down-arrow.png">
+          </p>
 
-<div class="mobile-nav-content">
-  <div class="mobile-content-center">
-    <div class="mobile-column mob-1">
-      <div class="mobile-button">
-      <p class="mob-column-headline">Company</p>
-      <p class="mobile-button-right"><img src="image/down-arrow.png"</p>
-        <div class="mobile-button-content-1 ">
-          <a class="about" href="https://company.helloeko.com/">About</a>
+          <div class="column-three-content">
+            <a class="mob-link" href="https://company.helloeko.com/brands#orginalcontent">Original Content</a>
+            <a class="mob-link"href="https://company.helloeko.com/brands#sparks">Sparks</a>
+            <a class="mob-link" href="https://company.helloeko.com/brands#sparkscontinued">Sparks Continued</a>
+            <a class="mob-link" href="https://company.helloeko.com/brands#brandedcontent">Branded Content</a>
+            <a class="mob-link" href="https://company.helloeko.com/brands#partners">Partners</a>
+            </div>
         </div>
-        <div class="mobile-button-content-1">
-          <a class="history" href="https://company.helloeko.com/choice-moments">History</a>
+
+        <div class="mob-column column-four">
+          <p class="mob-column-headline">Creators
+            <img class="down-arrow arrow-four" src="image/down-arrow.png">
+          </p>
+
+          <div class="column-four-content">
+            <a class="mob-link" href="https://studio.helloeko.com/">Eko Studio</a>
+            <a class="mob-link" href="https://studio.helloeko.com/guides">Creative Guidelines</a>
+            <a class="mob-link" href="https://developer.helloeko.com/">Developers</a>
+          </div>
         </div>
-        <div class="mobile-button-content-1 active-nav">
-          <span class="team"><img class="active-dot-mob"src="image/active-dot.png">
-            <a class="team-link team-a"href="https://company.helloeko.com/our-team">Team</a>
-            </span>
-        </div>
-        <div class="mobile-button-content-1">
-          <a class="blog" href="https://blog.helloeko.com/">Blog</a>
-        </div>
-        <div class="mobile-button-content-1">
-          <a class="press" href="https://company.helloeko.com/media/press-releases">Press</a>
-        </div>
-        <div class="mobile-button-content-1">
-          <a class="jobs" href="https://company.helloeko.com/careers">Jobs</a>
+
+
+        <!-- MOBILE NAV SOCIAL LINKS -->
+        <div class="contact-btn-mobile">
+          <div class="social-btn-mobile">
+            <a class="mob-icon" href="https://www.facebook.com/helloeko"><img class="mob-icon" src="image/facebook-f-logo-transparent-facebook-f-22.png"></a>
+            <a class="mob-icon" href="https://twitter.com/ekovideo"><img class="mob-icon" src="image/twitterbird_RGB.png"></a>
+            <a class="mob-icon" href="https://www.linkedin.com/company-beta/1027016/"><img class="mob-icon" src="image/polarstern-kompetenzen-social-media-linkedin.png"></a>
+          </div>
+            <a class="contact-button" href="https://company.helloeko.com/contact" target="_self">
+              <p class="contact-button-mobile">Contact Us</p>
+            </a>
         </div>
       </div>
     </div>
+  <!-- MOBILE CONTENT END -->
 
-    <div class="mobile-column mob-2">
-      <div class="mobile-button">
-      <p class="mob-column-headline">Stories</p>
-      <p class="mobile-button-right"><img src="image/down-arrow.png"</p>
-        <div class="mobile-button-content-2">
-          <a class="broken" href="https://helloeko.com/stories">Broken Night VR</a>
-        </div>
-        <div class="mobile-button-content-2">
-          <a class="possibilia" href="https://helloeko.com/stories#pro_hloizr">Possibilia</a>
-        </div>
-        <div class="mobile-button-content-2">
-          <a class="oneOnone" href="https://helloeko.com/stories#pro_9olx9y">One on One</a>
-        </div>
-        <div class="mobile-button-content-2">
-          <a class="more" href="https://helloeko.com/stories">More...</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="mobile-column mob-3">
-      <div class="mobile-button">
-      <p class="mob-column-headline">Brands</p>
-      <p class="mobile-button-right"><img src="image/down-arrow.png"></p>
-        <div class="mobile-button-content-3">
-          <a class="orginal" href="https://company.helloeko.com/brands#orginalcontent">Original Content</a>
-        </div>
-        <div class="mobile-button-content-3">
-          <a class="sparks" href="https://company.helloeko.com/brands#sparks">Sparks</a>
-        </div>
-        <div class="mobile-button-content-3">
-          <a class="continued" href="https://company.helloeko.com/brands#sparkscontinued">Sparks Continued</a>
-        </div>
-        <div class="mobile-button-content-3">
-          <a class="content" href="https://company.helloeko.com/brands#brandedcontent">Branded Content</a>
-        </div>
-        <div class="mobile-button-content-3">
-          <a class="partners" href="https://company.helloeko.com/brands#partners">Partners</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile-column mob-4">
-      <div class="mobile-button">
-      <p class="mob-column-headline">Creators
-      <p class="mobile-button-right"><img src="image/down-arrow.png"></p>
-        <div class="mobile-button-content-4">
-          <a class="studio" href="https://studio.helloeko.com/">Eko Studio</a>
-        </div>
-        <div class="mobile-button-content-4">
-          <a class="creative" href="https://studio.helloeko.com/guides">Creative Guidelines</a>
-        </div>
-        <div class="mobile-button-content-4">
-          <a class="developers" href="https://developer.helloeko.com/">Developers</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="contact-btn-mobile">
-  <div class="social-btn-mobile">
-    <a href="https://www.facebook.com/helloeko"><img class="mob-icon" src="image/facebook-f-logo-transparent-facebook-f-22.png"></a>
-    <a href="https://twitter.com/ekovideo"><img class="mob-icon" src="image/twitterbird_RGB.png"></a>
-    <a href="https://www.linkedin.com/company-beta/1027016/"><img class="mob-icon" src="image/polarstern-kompetenzen-social-media-linkedin.png"></a>
-  </div>
-  <a class="ekocom-header-cta eko-btn eko-btn-border color-white size-small contactBtn" href="https://company.helloeko.com/contact" target="_self">
-      <p class="contact-button">Contact Us</p>
-  </a>
-  </div>
-</div>
-<div class="nav-container-background"></div>
+  </header>
 
 
 
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/videoDouble.js"></script>
-<script src="./js/selectVideo.js"></script>
-
-
-<script data-main="app" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
